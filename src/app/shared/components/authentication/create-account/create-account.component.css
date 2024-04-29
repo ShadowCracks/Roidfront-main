@@ -1,0 +1,192 @@
+.create-account-page{
+    display: flex;
+}
+.register-image{
+    width: 871px;
+    height: 982px;
+    flex-shrink: 0;
+    background: linear-gradient(0deg, #F5C527 0%, #F5C527 100%), url(../../../../../assets/images/pages/authentication/create-account.png), lightgray 50% / cover no-repeat;
+    background-blend-mode: color, normal;
+}
+.register-content{
+    padding: 20px;
+    width: 100%;
+}
+.important-card{
+    width: 570px;
+    height: 96px;
+    /* transform: rotate(90deg); */
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F9F2DE;
+    padding: 10px 10px 10px 20px;
+    margin-bottom: 20px;
+}
+.text-style-one{
+    width: 502px;
+    height: 90px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.2px;
+}
+.text-style-two{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0.2px;
+    text-transform: lowercase;
+    
+}
+.text-style-three{
+    color: #0F0F0F;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.2px;
+    text-decoration-line: underline;
+    text-transform: lowercase;
+}
+.text-label{
+    width: 404px;
+    color: var(--greyscale-900, #0F172A);
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 17.5px */
+    letter-spacing: 0.2px;
+}
+.form-one-card input,.form-one-card select{
+    display: flex;
+    width: 556px;
+    height: 35px;
+    padding: 6px 16px;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid var(--background-1, #191A1B);
+    margin-bottom: 10px;   
+}
+.public-group-card{
+    width: 567px;
+    height: 133px;
+    /* transform: rotate(90deg); */
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #ECECEC;
+    margin-top: 20px;
+    padding: 10px 10px 10px 20px;
+}
+.public-group-card-heading{
+    display: flex;
+    justify-content: center;
+    width: 499.358px;
+    height: 27.205px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 25px */
+    letter-spacing: 0.2px;
+}
+.checkbox-row{
+    display: flex;
+    margin: 5px 0px;
+}
+.checkbox{
+    width: 10.615px;
+    height: 12px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    border: 1px solid #000;
+    background: #ECECEC;
+    margin: 10px 10px;
+}
+.checkbox-text{
+    /* width: 177.796px; */
+    color: var(--greyscale-900, #0F172A);
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 18px */
+    letter-spacing: 0.2px;
+    margin-top: 6px;
+}
+.checkbox-text .one{
+    width: 178px;
+}
+.checkbox-text .two{
+    width: 65px;
+}
+.checkbox-text .three{
+    width: 87px;
+}
+.checkbox-text .four{
+    width: 113.223px;
+}
+.form-two{
+    margin-top: 30px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.create-new-account-button{
+    display: flex;
+    width: 400px;
+    height: 56px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--background-1, #191A1B);
+}
+.create-new-account-button span{
+    color: var(--additional-white, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.2px;
+}
+.back-to-signup{
+    display: flex;
+    justify-content: center;
+    color: var(--greyscale-900, #0F172A);
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 22.4px */
+    /* margin-top: 40px; */
+    margin-bottom: 20px;
+}
+.back-to-signup span{
+    color: var(--background-1, #191A1B);
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    margin-left: 5px;
+}

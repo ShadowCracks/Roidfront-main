@@ -1,0 +1,330 @@
+.steroid-source-review-card-one{
+    width: 808px;
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #EEE8D3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.steroid-source-review-card-one-heading{
+    width: 396px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--background-1, #191A1B);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    text-transform: lowercase;
+}
+.steroid-source-review-card-one-description{
+    width: 768px;
+    height: 66px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: -0.24px;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+.steroid-source-review-card-two{
+    width: 802px;
+    height: 221px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #CDCDCD;
+    background: url(../../../../../assets/images/pages/steroid-source-review-01.png), lightgray 50% / cover no-repeat;
+    margin-top: 20px;
+}
+.photo-gallery{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.photo-gallery .photo-one{
+    width: 120px;
+    height: 92px;
+    flex-shrink: 0;
+    background: url(../../../../../assets/images/pages/photo-gallery-01.png), lightgray 50% / cover no-repeat;
+}
+.photo-gallery .photo-two{
+    width: 120px;
+    height: 92px;
+    flex-shrink: 0;
+    background: url(../../../../../assets/images/pages/photo-gallery-02.png), lightgray 50% / cover no-repeat;
+}
+.photo-gallery .photo-three{
+    width: 120px;
+    height: 92px;
+    flex-shrink: 0;
+    background: url(../../../../../assets/images/pages/photo-gallery-03.png), lightgray 50% / cover no-repeat;
+}
+.photo-gallery .photo-four{
+    width: 120px;
+    height: 92px;
+    flex-shrink: 0;
+    background: url(../../../../../assets/images/pages/photo-gallery-04.png), lightgray 50% / cover no-repeat;
+}
+.photo-gallery .photo-five{
+    width: 120px;
+    height: 92px;
+    flex-shrink: 0;
+    background: url(../../../../../assets/images/pages/photo-gallery-05.png), lightgray 50% / cover no-repeat;
+}
+.photo-gallery .photo-six{
+    width: 120px;
+    height: 92px;
+    flex-shrink: 0;
+    background: url(../../../../../assets/images/pages/photo-gallery-06.png), lightgray 50% / cover no-repeat;
+}
+.review-box{
+    width: 808px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #EEE;
+    margin-top: 20px;
+    padding: 20px;
+}
+.review-heading{
+    display: flex;
+    margin-bottom: 20px;
+}
+.review-heading-text{
+    width: 246px;
+    height: 36px;
+    flex-shrink: 0;
+    color: var(--background-1, #191A1B);
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    text-transform: capitalize;
+}
+.review-button{
+    display: flex;
+    width: 122px;
+    padding: 2px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 15px;
+    background: var(--background-1, #191A1B);
+    color: white;
+    position: relative;
+    left: 350px;
+}
+.review-author-text{
+    width: 246px;
+    height: 36px;
+    flex-shrink: 0;
+    color: var(--background-1, #191A1B);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.32px;
+    text-transform: capitalize;
+}
+.review-content-text{
+    width: 768px;
+    height: 55px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: -0.24px;
+    text-transform: capitalize;
+}
+.review-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.review-pagination img{
+    width: 24px;
+    height: 24px;
+}
+.review-pagination .pagination-first{
+    display: flex;
+    padding: 5px 10px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #000;
+    color: white;
+}
+.review-pagination .pagination-second{
+    display: flex;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--grays-black-100, #222E42);
+    background: var(--White, #FFF);
+}
+.steroid-source-review-card-three{
+    width: 326px;
+    height: 237px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.41);
+    margin-top: 20px;
+    padding: 17px;
+    margin-bottom: 20px;
+}
+.steroid-source-review-card-three .author-detail-card{
+    width: 291px;
+    height: 49px;
+    flex-shrink: 0;
+    background-color: #E2E2E2;
+    margin-bottom: 20px;
+    padding: 8px;
+    display: flex;
+}
+.author-detail-card-image{
+    width: 30px;
+    height: 34px;
+    flex-shrink: 0;
+    background: url(../../../../../assets/images/pages/author-image-01.png), lightgray 50% / cover no-repeat;
+}
+.author-detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.author-detail span{
+    width: 247.78px;
+    color: var(--background-1, #191A1B);
+    font-family: Public Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 27px;  225% */
+    text-transform: capitalize;
+}
+.author-detail-kpi{
+    display: flex;
+}
+.author-detail-kpi .kpi-one{
+    display: flex;
+    width: 36px;
+    height: 14px;
+    padding: 0px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: var(--primary-800, #F5C527);
+}
+.author-detail-kpi .kpi-one span{
+    color: var(--background-1, #191A1B);
+    font-family: Inter;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 300% */
+    letter-spacing: -0.8px;
+}
+.author-detail-kpi .kpi-two{
+    display: flex;
+    width: 28px;
+    height: 14px;
+    padding: 0px 6px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: var(--background-3, #555);
+    margin-left: 5px;
+}
+.author-detail-kpi .kpi-two span{
+    color: var(--text-primary, #FFF);
+    font-family: Inter;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 300% */
+    letter-spacing: -0.8px;
+}
+.steroid-source-review-card-three .author-post-card{
+    width: 291px;
+    height: 133px;
+    flex-shrink: 0;
+    background-color: #E2E2E2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.author-post-card-heading{
+    width: 247.78px;
+    color: var(--background-1, #191A1B);
+    font-family: Public Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px; /* 225% */
+    text-transform: capitalize;
+}
+.author-post-card-divider{
+    width: 266px;
+    height: 1px;
+    background: #666;
+    display: flex;
+    margin-bottom: 5px;
+}
+.author-post-card-divider-svg{
+    position: relative;
+    top: -12px;
+    height: 8px;
+}
+/* .author-post-card-divider-one{
+    display: flex;
+    background: url(../../../../../assets/images/pages/divider-line-01.png), lightgray 50% / cover no-repeat;
+} */
+.author-post{
+    width: 247.78px;
+    color: var(--background-1, #191A1B);
+    font-family: Open Sans;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 120% */
+    text-transform: capitalize;
+    margin: 5px 0px;
+}
+.promo-card{
+    margin-top: 20px;
+    width: 325px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    /* background: #D9D9D9; */
+    background: url(../../../../../assets/images/pages/promo-image-02.png), lightgray 0% / cover no-repeat;
+}
+/* .promo-card-img{
+    width: 443px;
+    height: 167px;
+    flex-shrink: 0;
+    background: url(../../../../../assets/images/pages/promo-image-02.png), lightgray 0% / cover no-repeat;
+} */

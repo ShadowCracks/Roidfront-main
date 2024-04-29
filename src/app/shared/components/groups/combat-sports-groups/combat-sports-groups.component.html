@@ -1,0 +1,259 @@
+<div class="group-details">
+  <div class="banner">
+    <p>Combat Sports Groups</p>
+  </div>
+  <div class="page-content">
+    <div class="navLink">
+      <span class="home">Home</span>
+      <span class="arrow">></span>
+      <span class="routable-text" (click)="goToBack()">Groups</span>
+      <span class="arrow">></span>
+      <span class="nav-text">{{ group.heading }}</span>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="group-detail-card">
+            <span class="group-detail-card-heading">{{ group.heading }}</span>
+            <span class="group-detail-card-description">
+              {{ group.text }}
+            </span>
+            <div style="display: flex; margin-top: 10px">
+              <span class="author-img"></span>
+              <span class="author-name">{{ group.author }}</span>
+            </div>
+            <div style="display: flex; margin-top: 20px">
+              <div>
+                <div class="button-one"><span>Subscribe</span></div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  width: 100%;
+                  justify-content: flex-end;
+                  margin-right: 30px;
+                "
+              >
+                <span class="button-two">
+                  <span
+                    ><img
+                      src="../../../../../assets/images/pages/eye.png"
+                      alt=""
+                  /></span>
+                  <span class="button-two-kpi">308</span>
+                </span>
+                <span class="button-three"
+                  ><span>{{ group.type }}</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="review-heading">
+              <span class="review-heading-text"> Review </span>
+              <!-- <div style="display: flex;"> -->
+              <button type="button" class="review-button-one">
+                Join to post in this group
+              </button>
+              <!-- </div> -->
+            </div>
+            <div class="review-card">
+              <div class="review-author">
+                <span class="review-author-text">User</span>
+              </div>
+              <div class="review-star">
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-grey.png"
+                  alt=""
+                  class="active"
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+              </div>
+              <div class="review-content">
+                <span class="review-content-text">
+                  600mg a week makes me hungry and vascular as fuck, is got for
+                  tendons so good with deca in a off season. Watchout for your
+                  rbc especially if u run high doses boldenone then its not mild
+                  anymore just run a mild or low dose and u get some benefits
+                  without any or low side effects.
+                </span>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-author">
+                <span class="review-author-text">User</span>
+              </div>
+              <div class="review-star">
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-grey.png"
+                  alt=""
+                  class="active"
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+              </div>
+              <div class="review-content">
+                <span class="review-content-text">
+                  600mg a week makes me hungry and vascular as fuck, is got for
+                  tendons so good with deca in a off season. Watchout for your
+                  rbc especially if u run high doses boldenone then its not mild
+                  anymore just run a mild or low dose and u get some benefits
+                  without any or low side effects.
+                </span>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-author">
+                <span class="review-author-text">User</span>
+              </div>
+              <div class="review-star">
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-grey.png"
+                  alt=""
+                  class="active"
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+              </div>
+              <div class="review-content">
+                <span class="review-content-text">
+                  600mg a week makes me hungry and vascular as fuck, is got for
+                  tendons so good with deca in a off season. Watchout for your
+                  rbc especially if u run high doses boldenone then its not mild
+                  anymore just run a mild or low dose and u get some benefits
+                  without any or low side effects.
+                </span>
+              </div>
+            </div>
+            <div class="review-pagination">
+              <img
+                src="../../../../../assets/images/pages/arrow-left-pagination.png"
+                alt=""
+              />
+              <button type="button" class="pagination-first">1</button>
+              <button type="button" class="pagination-second">2</button>
+              <button type="button" class="pagination-second">3</button>
+              <button type="button" class="pagination-second">...</button>
+              <button type="button" class="pagination-second">25</button>
+              <img
+                src="../../../../../assets/images/pages/arrow-right-pagination.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="group-members-card">
+            <span>Members</span>
+            <div class="members-pic">
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-01.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-01.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-02.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-02.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-01.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-01.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-02.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-02.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-01.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-01.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-02.png"
+                  alt=""
+              /></span>
+              <span
+                ><img
+                  src="../../../../../assets/images/pages/group-members-02.png"
+                  alt=""
+              /></span>
+            </div>
+          </div>
+          <div class="promo-image"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

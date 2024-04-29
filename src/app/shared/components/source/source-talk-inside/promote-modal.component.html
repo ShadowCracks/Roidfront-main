@@ -1,0 +1,22 @@
+<div class="promote-modal">
+  <h3 mat-dialog-title>Choose Karma Points</h3>
+  <div mat-dialog-content>
+    <select class="promote-options" (change)="onChange($event)">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+  <div mat-dialog-actions class="promote-actions">
+    <button
+      mat-button
+      mat-dialog-close
+      cdkFocusInitial
+      class="promote-button"
+      (click)="onPromote()"
+    >
+      Promote
+    </button>
+  </div>
+</div>

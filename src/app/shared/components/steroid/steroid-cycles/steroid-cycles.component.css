@@ -1,0 +1,427 @@
+/* Top common Starts */
+.banner {
+  /* width: 1512px; */
+  height: 115px;
+  flex-shrink: 0;
+  background: #f5c527;
+}
+.banner p {
+  color: var(--background-1, #191a1b);
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px; /* 102.857% */
+  text-transform: uppercase;
+  position: relative;
+  top: 40px;
+}
+.page-content {
+  /* margin: 0px 150px; */
+  padding: 0px 100px;
+}
+.navLink .home {
+  color: var(--background-1, #191a1b);
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 257.143% */
+  /* text-decoration-line: underline; */
+  text-transform: capitalize;
+}
+.navLink .arrow {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: capitalize;
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
+.navLink .nav-text {
+  color: var(--primary-800, #f5c527);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+  text-transform: capitalize;
+  margin-left: 5px;
+}
+
+/* Top common Ends */
+
+/* Steroids cycle button Starts */
+
+.steroid-cycles-button {
+  display: flex;
+}
+.steroid-cycles-button-one {
+  display: flex;
+  padding: 4px 12px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 36px;
+  border: 1px solid #666;
+  background: #fff;
+  margin-right: 20px;
+}
+.steroid-cycles-button-one span {
+  flex: 1 0 0;
+  color: #707070;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+}
+.steroid-cycles-button-two {
+  display: flex;
+  padding: 4px 12px;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 36px;
+  border: 1px solid #fff;
+  background: #000;
+}
+.steroid-cycles-button-two span {
+  flex: 1 0 0;
+  color: #fff;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.42px;
+}
+
+/* Steroids cycle button Ends */
+
+.steroid-cycles-box {
+  margin-top: 40px;
+}
+.steroid-cycle-card {
+  max-width: 808px;
+  /* height: 70px; */
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #eee8d3;
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+}
+.steroid-cycle-card:hover {
+  background: #e6ddc1;
+  cursor: pointer;
+}
+.steroid-cycles-card-image-one {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 58px;
+  margin-right: 15px;
+  background: url(../../../../../assets/images/pages/steroid-cycles-image-01.png),
+    lightgray 50% / cover no-repeat;
+}
+.steroid-cycles-card-image-two {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 58px;
+  margin-right: 23px;
+  background: url(../../../../../assets/images/pages/steroid-cycles-image-02.png),
+    lightgray 50% / cover no-repeat;
+}
+.steroid-cycle-card-content {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px dotted #847d67;
+  border-right: 2px dotted #847d67;
+  padding: 0 23px;
+}
+.steroid-cycle-card-heading {
+  width: 267px;
+  /* height: 14px; */
+  flex-shrink: 0;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.steroid-cycle-card-description {
+  width: 433px;
+  /* height: 29px; */
+  flex-shrink: 0;
+  color: #3c3b39;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 140% */
+  margin-top: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.steroid-cycle-card-kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.steroid-cycles-card-kpi-top-one {
+  width: 44px;
+  height: 10.426px;
+  flex-shrink: 0;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+}
+.steroid-cycles-card-kpi-top-two {
+  width: 96px;
+  height: 10.426px;
+  flex-shrink: 0;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+}
+.steroid-cycle-card-kpi-bottom {
+  display: flex;
+  gap: 5px;
+}
+.steroid-cycles-card-kpi-button-one {
+  display: flex;
+  /* width: 51px; */
+  height: 18px;
+  padding: 0px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #c4c4c4;
+  border: none;
+}
+.steroid-cycles-card-kpi-button-one span {
+  color: #0f0f0f;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 240% */
+  letter-spacing: -1px;
+}
+.steroid-cycles-card-kpi-button-two {
+  display: flex;
+  width: 39px;
+  height: 17.541px;
+  padding: 0px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: var(--primary-800, #f5c527);
+  border: none;
+}
+.steroid-cycles-card-kpi-button-two span {
+  color: var(--background-1, #191a1b);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 240% */
+  letter-spacing: -1px;
+}
+/* Pagination Starts */
+
+.review-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.review-pagination img {
+  width: 24px;
+  height: 24px;
+}
+.review-pagination .pagination-first {
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+}
+.review-pagination .pagination-second {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--grays-black-100, #222e42);
+  background: var(--White, #fff);
+}
+
+/* Pagination Ends */
+
+/* Recent Steriod reviews starts */
+.recent-steroid-reviews {
+  width: 326px;
+  height: 339px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.41);
+  padding: 0px 20px;
+}
+.recent-steroid-reviews .heading .heading-text {
+  width: 360px;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 333.333% */
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+}
+.recent-steriod-reviews-card {
+  width: 290.532px;
+  height: 75px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e2e2e2;
+  margin-bottom: 10px;
+}
+.recent-steroid-reviews-card-content-text {
+  width: 247.78px;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 120% */
+  text-transform: capitalize;
+}
+.recent-steroid-reviews-card-content-text span {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: capitalize;
+}
+.recent-steriod-reviews-card {
+  padding: 0px 10px;
+}
+.recent-steroid-reviews-card-button {
+  display: flex;
+  width: 80.75px;
+  height: 17px;
+  padding: 0px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #000;
+  color: var(--primary-800, #f5c527);
+  font-family: Inter;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 300% */
+  letter-spacing: -0.8px;
+}
+.recent-steroid-reviews-card-marker-one {
+  display: flex;
+  width: 22.071px;
+  height: 18.909px;
+  padding: 0px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #4bed7d;
+  margin-left: 130px;
+}
+.recent-steroid-reviews-card-marker-one .vector {
+  width: 8.849px;
+  height: 4.222px;
+  flex-shrink: 0;
+  stroke-width: 1.5px;
+  stroke: #000;
+  position: relative;
+  top: -12px;
+}
+.recent-steroid-reviews-card-marker-two {
+  display: flex;
+  width: 21.017px;
+  height: 19px;
+  padding: 0px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: var(--primary-800, #f5c527);
+}
+.recent-steroid-reviews-card-marker-two .text {
+  color: var(--background-1, #191a1b);
+  font-family: Inter;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 300% */
+  letter-spacing: -0.8px;
+}
+
+/* Recent Steriod reviews Ends */
+
+/* Promo Image Starts */
+
+.promo-image {
+  width: 326px;
+  height: 339px;
+  flex-shrink: 0;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: url(../../../../../assets/images/pages/promo-image-01.png),
+    lightgray 50% / cover no-repeat;
+}
+
+/* Promo Image Ends */

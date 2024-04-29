@@ -1,0 +1,47 @@
+<div class="main-wrapper mx-auto mt-3">
+  <div class="main-section source-talk mt-3 d-flex justify-content-between">
+    <div class="w-100">
+      <div class="d-flex gap-2">
+        <a routerLink="/steroids/review" class="rounded-sm-btn fs-7 fw-bold bg-black text-white">Reviews</a>
+        <a routerLink="/steroids/talk" class="rounded-sm-btn fs-7 fw-bold">Talk</a>
+        <a routerLink="/steroids/cycles" class="rounded-sm-btn fs-7 fw-bold">Steroid cycles</a>
+      </div>
+      <div class="list-container mt-5">
+        <div class="list-body talks-list d-flex flex-column gap-1 mt-2">
+          @for(steroid of (steroids$ | async); track steroid._id; let idx = $index) {
+          <a [routerLink]="['/steroids/review', steroid._id]" class="list-item steroid-talk-item bg-bg3 rounded-xl d-flex justify-content-between">
+            <div class="list-item_content">
+              <div class="d-flex align-items-center justify-content-start gap-2">
+                <img class="steroid-talk-item-img" src="../../../../assets/imgs/steroids-talk-img.png" alt="" />
+                <div class="steroid-talk_content_text flex align-items-center flex-wrap">
+                  <p class="fw-bold text-uppercase m-0">{{steroid.name}}</p>
+                  <span class="m-0 fs-9">({{steroid.commonName.name}} by {{ steroid.manufacturer.name }})</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-item_points d-flex flex-wrap">
+              <div class="review-stars">
+                <img src="../../../../assets/icons/icon-review-star-empty.svg" alt="" />
+                <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+                <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+                <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+                <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+              </div>
+              <span class="bg-bg4 rounded-xl p-1 px-2 fs-9-5 fw-semibold">{{steroid.score | number: '1.2-2'}}
+              </span>
+              <span class="bg-primary-800 rounded-xl p-1 px-2 fs-9-5 fw-semibold">{{steroid.reviewCount}}</span>
+            </div>
+          </a>
+          }
+
+        </div>
+        <app-pagination></app-pagination>
+      </div>
+    </div>
+    <aside class="d-flex flex-column gap-3">
+      <app-search-filter></app-search-filter>
+      <app-recent-reviews [type]="'Review'" [reference]="'Steroid'"></app-recent-reviews>
+    </aside>
+  </div>
+</div>

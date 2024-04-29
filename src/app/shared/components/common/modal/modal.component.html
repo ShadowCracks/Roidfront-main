@@ -1,0 +1,18 @@
+<div class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4>{{ modalTitle }}</h4>
+            <button type="button" (click)="close()" class="close">X</button>
+        </div>
+
+        <div class="modal-body">
+            <select class="form-control" [(ngModel)]="selected" (change)="onChange($event)">
+                <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+            </select>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" *ngIf="confirm" (click)="confirm()">Promote</button>
+        </div>
+    </div>
+</div>

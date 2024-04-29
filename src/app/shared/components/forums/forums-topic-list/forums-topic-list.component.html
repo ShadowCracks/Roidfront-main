@@ -1,0 +1,255 @@
+<div class="forums-topic-list">
+  <div class="banner">
+    <p>Forums</p>
+  </div>
+  <div class="page-content">
+    <div class="navLink">
+      <span class="home">Home</span>
+      <span class="arrow">></span>
+      <span class="nav-text">Forums</span>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="toggle-buttons-group">
+            <button type="button" class="toggle-button toggle-button-active">
+              <span>All</span>
+            </button>
+            <button type="button" class="toggle-button">
+              <span>Steroid QA</span>
+            </button>
+            <button type="button" class="toggle-button">
+              <span>High & Peptides</span>
+            </button>
+            <button type="button" class="toggle-button">
+              <span>Sports Talk</span>
+            </button>
+            <button type="button" class="toggle-button">
+              <span>Training, Nutrition & Diet</span>
+            </button>
+            <button type="button" class="toggle-button">
+              <span>Food</span>
+            </button>
+            <div class="forum-filters">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="34"
+                viewBox="0 0 45 34"
+                fill="none"
+              >
+                <path
+                  d="M19.6875 8.5H37.9688M19.6875 8.5C19.6875 9.06358 19.3912 9.60409 18.8637 10.0026C18.3363 10.4011 17.6209 10.625 16.875 10.625C16.1291 10.625 15.4137 10.4011 14.8863 10.0026C14.3588 9.60409 14.0625 9.06358 14.0625 8.5M19.6875 8.5C19.6875 7.93641 19.3912 7.39591 18.8637 6.9974C18.3363 6.59888 17.6209 6.375 16.875 6.375C16.1291 6.375 15.4137 6.59888 14.8863 6.9974C14.3588 7.39591 14.0625 7.93641 14.0625 8.5M14.0625 8.5H7.03125M19.6875 25.5H37.9688M19.6875 25.5C19.6875 26.0636 19.3912 26.6041 18.8637 27.0026C18.3363 27.4011 17.6209 27.625 16.875 27.625C16.1291 27.625 15.4137 27.4011 14.8863 27.0026C14.3588 26.6041 14.0625 26.0636 14.0625 25.5M19.6875 25.5C19.6875 24.9364 19.3912 24.3959 18.8637 23.9974C18.3363 23.5989 17.6209 23.375 16.875 23.375C16.1291 23.375 15.4137 23.5989 14.8863 23.9974C14.3588 24.3959 14.0625 24.9364 14.0625 25.5M14.0625 25.5H7.03125M30.9375 17H37.9688M30.9375 17C30.9375 17.5636 30.6412 18.1041 30.1137 18.5026C29.5863 18.9011 28.8709 19.125 28.125 19.125C27.3791 19.125 26.6637 18.9011 26.1363 18.5026C25.6088 18.1041 25.3125 17.5636 25.3125 17M30.9375 17C30.9375 16.4364 30.6412 15.8959 30.1137 15.4974C29.5863 15.0989 28.8709 14.875 28.125 14.875C27.3791 14.875 26.6637 15.0989 26.1363 15.4974C25.6088 15.8959 25.3125 16.4364 25.3125 17M25.3125 17H7.03125"
+                  stroke="black"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="forum-card-list">
+            <div
+              class="forum-list-card"
+              *ngFor="let topic of topics"
+              (click)="goToDetails(topic.topicId)"
+            >
+              <div class="forum-list-card-content">
+                <span class="forum-list-card-content-heading">{{
+                  topic.title
+                }}</span>
+                <span class="forum-list-card-content-description">
+                  {{ topic.subTitle }}
+                </span>
+              </div>
+              <!-- <div class="forum-list-card-divider">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2"
+                  height="47"
+                  viewBox="0 0 2 47"
+                  fill="none"
+                >
+                  <path
+                    d="M0.499998 46C0.499998 46.2761 0.723856 46.5 0.999998 46.5C1.27614 46.5 1.5 46.2761 1.5 46L0.499998 46ZM0.5 -2.18558e-08L0.5 0.958333L1.5 0.958333L1.5 2.18558e-08L0.5 -2.18558e-08ZM0.5 2.875L0.5 4.79167L1.5 4.79167L1.5 2.875L0.5 2.875ZM0.5 6.70833L0.5 8.625L1.5 8.625L1.5 6.70833L0.5 6.70833ZM0.5 10.5417L0.499999 12.4583L1.5 12.4583L1.5 10.5417L0.5 10.5417ZM0.499999 14.375L0.499999 16.2917L1.5 16.2917L1.5 14.375L0.499999 14.375ZM0.499999 18.2083L0.499999 20.125L1.5 20.125L1.5 18.2083L0.499999 18.2083ZM0.499999 22.0417L0.499999 23.9583L1.5 23.9583L1.5 22.0417L0.499999 22.0417ZM0.499999 25.875L0.499999 27.7917L1.5 27.7917L1.5 25.875L0.499999 25.875ZM0.499999 29.7083L0.499999 31.625L1.5 31.625L1.5 29.7083L0.499999 29.7083ZM0.499999 33.5417L0.499998 35.4583L1.5 35.4583L1.5 33.5417L0.499999 33.5417ZM0.499998 37.375L0.499998 39.2917L1.5 39.2917L1.5 37.375L0.499998 37.375ZM0.499998 41.2083L0.499998 43.125L1.5 43.125L1.5 41.2083L0.499998 41.2083ZM0.499998 45.0417L0.499998 46L1.5 46L1.5 45.0417L0.499998 45.0417Z"
+                    fill="#847D67"
+                  />
+                </svg>
+              </div> -->
+              <div class="forum-list-card-kpi">
+                <div class="row-one">
+                  <span class="row-one-kpi-one"
+                    ><span>{{ topic.meta.viewed }}</span></span
+                  >
+                  <span class="row-one-kpi-two"
+                    ><span>{{ topic.meta.author }}</span></span
+                  >
+                </div>
+                <div class="row-two">
+                  <span class="row-two-kpi-one"
+                    ><span>{{ topic.meta.author }}</span></span
+                  >
+                  <span class="row-two-kpi-two"
+                    ><span
+                      >| {{ getDateFromTimestamp(topic.createdAt) }}</span
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="review-pagination">
+              <img
+                src="../../../../../assets/images/pages/arrow-left-pagination.png"
+                alt=""
+              />
+              <button type="button" class="pagination-first">1</button>
+              <button type="button" class="pagination-second">2</button>
+              <button type="button" class="pagination-second">3</button>
+              <button type="button" class="pagination-second">...</button>
+              <button type="button" class="pagination-second">25</button>
+              <img
+                src="../../../../../assets/images/pages/arrow-right-pagination.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="recent-steroid-reviews">
+            <div class="heading">
+              <span class="heading-text">RECENT STEROID REVIEWS</span>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="promo-image"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+@if(showCommentBox) {
+<form
+  [formGroup]="commentForm"
+  (ngSubmit)="onSubmitComment()"
+  class="form-group"
+>
+  <label for="exampleFormControlTextarea1">Comments:</label>
+  <textarea class="form-control" formControlName="comments" rows="3"></textarea>
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
+}
+
+<section class="review bg-bg8 rounded-xl p-3">
+  <div class="review-head d-flex align-items-center justify-content-between">
+    <h4 class="fw-bold">{{ type === "Comment" ? "Comments" : "Reviews" }}</h4>
+    <a
+      href="javascript:void(0);"
+      (click)="enableCommentBox()"
+      class="rounded-btn bg-black text-white"
+    >
+      Write a {{ type }}</a
+    >
+  </div>
+
+  @for(comment of (commentsOrReviews$ | async); track comment._id; let idx =
+  $index) {
+  <div class="review-list d-flex flex-column gap-3 mt-2">
+    <!-- <div class="review-item">
+        <h6 class="m-0 fw-bold">{{ comment.user.username }}</h6>
+        @if(comment.type === 'Review') {
+        <div class="review-stars">
+          <img src="../../../../assets/icons/icon-review-star-empty.svg" alt="" />
+          <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+          <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+          <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+          <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+        </div>
+        }
+        <p class="fs-9 m-0 mt-1">
+          {{ comment.comments }}
+        </p>
+      </div> -->
+
+    <div class="review-item comment-item" id="comment1">
+      <div class="comment-head">
+        <div class="user-profile">
+          <img src="../../../../assets/imgs/aside-profile-pic.png" alt="" />
+          <h6 class="m-0 fw-bold">{{ comment.user.username }}</h6>
+          <span
+            data-text="Karma Points"
+            id="tooltip"
+            class="comment-karma_point bg-bg10 custom-tooltip"
+          >
+            <img src="../../../../assets/icons/icon-karma.svg" alt="" />
+            <span class="karma-amount" id="karmaAmount">922</span>
+          </span>
+        </div>
+
+        <div class="tags flex align-items-center gap-2">
+          <span class="tag-status">new</span>
+          <span class="tag-posted">10d ago</span>
+        </div>
+      </div>
+      @if(comment.type === 'Review') {
+      <div class="review-stars mb-1">
+        <img src="../../../../assets/icons/icon-review-star-empty.svg" alt="" />
+        <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+        <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+        <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+        <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+      </div>
+      }
+      <p class="fs-9 m-0 mt-1">
+        {{ comment.comments }}
+      </p>
+      @if(comment.type === 'Comment') {
+      <div class="comment-footer">
+        <button class="rounded-btn">Reply</button>
+        <div class="like-dislike">
+          <button
+            data-text="Like"
+            id="tooltip"
+            class="like"
+            onclick="updateKarma('comment1', 3)"
+          >
+            <img src="../../../../assets/icons/icon-like.svg" alt="" />
+            <span class="like-number" id="likeCount">12223</span>
+          </button>
+          <button
+            data-text="Dislike"
+            id="tooltip"
+            class="dislike"
+            onclick="updateKarma('comment1', -3)"
+          >
+            <img src="../../../../assets/icons/icon-dislike.svg" alt="" />
+            <span class="dislike-number" id="dislikeCount">322</span>
+          </button>
+        </div>
+        <span class="comment-karma_point custom-tooltip">
+          <img src="../../../../assets/icons/token_icon.ico" alt="" />
+          <div class="karma_point-input">
+            <span>Give Karma</span>
+            <input type="number" />
+            <input type="button" value="Grant" />
+          </div>
+          <!-- <span class="karma-amount" id="karmaAmount">922</span> -->
+        </span>
+      </div>
+      }
+    </div>
+  </div>
+  }
+</section>

@@ -1,0 +1,447 @@
+<div class="source-review-inside">
+  <div class="banner">
+    <p>Source Review Inside</p>
+  </div>
+  <div class="page-content">
+    <div class="navLink">
+      <span class="home">Home</span>
+      <span class="arrow">></span>
+      <span class="routable-text" (click)="goToBack()">Source Review</span>
+      <span class="arrow">></span>
+      <span class="nav-text">{{ review.sourceName }}</span>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="review-banner">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="review-banner-image"></div>
+              </div>
+              <div class="col-md-6">
+                <div class="review-banner-content">
+                  <div class="review-banner-content-heading">
+                    <span class="review-banner-content-heading-text">{{
+                      review.sourceName
+                    }}</span>
+                  </div>
+                  <div class="review-banner-content-star">
+                    <img
+                      src="../../../../../assets/images/pages/record-row-star-grey.png"
+                      alt=""
+                      class="active"
+                    />
+                    <img
+                      src="../../../../../assets/images/pages/record-row-star-gold.png"
+                      alt=""
+                    />
+                    <img
+                      src="../../../../../assets/images/pages/record-row-star-gold.png"
+                      alt=""
+                    />
+                    <img
+                      src="../../../../../assets/images/pages/record-row-star-gold.png"
+                      alt=""
+                    />
+                    <img
+                      src="../../../../../assets/images/pages/record-row-star-gold.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="review-banner-details">
+                    <div class="review-banner-table-container">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Category</th>
+                            <th>Count</th>
+                            <th>Average</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>EFFECTIVENESS</td>
+                            <td>{{ review.effectiveness?.split("/")[0] }}</td>
+                            <td>{{ review.effectiveness?.split("/")[1] }}</td>
+                          </tr>
+                          <tr>
+                            <td>CREDIBILITY</td>
+                            <td>{{ review.credibility?.split("/")[0] }}</td>
+                            <td>{{ review.credibility?.split("/")[1] }}</td>
+                          </tr>
+                          <tr>
+                            <td>SIDE EFFECTS / PIP</td>
+                            <td>{{ review.sideEffects?.split("/")[0] }}</td>
+                            <td>{{ review.sideEffects?.split("/")[1] }}</td>
+                          </tr>
+                          <tr>
+                            <td>OVERALL</td>
+                            <td>{{ review.overall?.split("/")[0] }}</td>
+                            <td>{{ review.overall?.split("/")[1] }}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="discuss-button-container">
+                      <button type="button" class="discuss-button">
+                        Discuss
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 review-banner-kpi-group-container">
+                <div class="review-banner-kpi-group">
+                  <div class="review-banner-kpi">
+                    <div>1</div>
+                    <div>Rank</div>
+                  </div>
+                  <div class="review-banner-kpi">
+                    <div>{{ review.sourceScore }}</div>
+                    <div>Score</div>
+                  </div>
+                  <div class="review-banner-kpi">
+                    <div>{{ review.votes }}</div>
+                    <div>Votes</div>
+                  </div>
+                  <div class="review-banner-kpi">
+                    <div>{{ review.numOfReviews }}</div>
+                    <div>Reviews</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-gallery">
+            <div class="photo-one"></div>
+            <div class="photo-two"></div>
+            <div class="photo-three"></div>
+            <div class="photo-four"></div>
+            <div class="photo-five"></div>
+            <div class="photo-six"></div>
+          </div>
+          <div class="review-box">
+            <div class="review-heading">
+              <span class="review-heading-text"> Review </span>
+              <div style="display: flex">
+                <button type="button" class="review-button">
+                  Write a Review
+                </button>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-author">
+                <span class="review-author-text">User</span>
+              </div>
+              <div class="review-star">
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-grey.png"
+                  alt=""
+                  class="active"
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+              </div>
+              <div class="review-content">
+                <span class="review-content-text">
+                  600mg a week makes me hungry and vascular as fuck, is got for
+                  tendons so good with deca in a off season. Watchout for your
+                  rbc especially if u run high doses boldenone then its not mild
+                  anymore just run a mild or low dose and u get some benefits
+                  without any or low side effects.
+                </span>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-author">
+                <span class="review-author-text">User</span>
+              </div>
+              <div class="review-star">
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-grey.png"
+                  alt=""
+                  class="active"
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+              </div>
+              <div class="review-content">
+                <span class="review-content-text">
+                  600mg a week makes me hungry and vascular as fuck, is got for
+                  tendons so good with deca in a off season. Watchout for your
+                  rbc especially if u run high doses boldenone then its not mild
+                  anymore just run a mild or low dose and u get some benefits
+                  without any or low side effects.
+                </span>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-author">
+                <span class="review-author-text">User</span>
+              </div>
+              <div class="review-star">
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-grey.png"
+                  alt=""
+                  class="active"
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+              </div>
+              <div class="review-content">
+                <span class="review-content-text">
+                  600mg a week makes me hungry and vascular as fuck, is got for
+                  tendons so good with deca in a off season. Watchout for your
+                  rbc especially if u run high doses boldenone then its not mild
+                  anymore just run a mild or low dose and u get some benefits
+                  without any or low side effects.
+                </span>
+              </div>
+            </div>
+            <div class="review-pagination">
+              <img
+                src="../../../../../assets/images/pages/arrow-left-pagination.png"
+                alt=""
+              />
+              <button type="button" class="pagination-first">1</button>
+              <button type="button" class="pagination-second">2</button>
+              <button type="button" class="pagination-second">3</button>
+              <button type="button" class="pagination-second">...</button>
+              <button type="button" class="pagination-second">25</button>
+              <img
+                src="../../../../../assets/images/pages/arrow-right-pagination.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="steroid-source-review-card-three">
+            <div class="author-detail-card">
+              <div class="author-detail-card-image"></div>
+              <div class="author-detail">
+                <span>ONESICK</span>
+                <div class="author-detail-kpi">
+                  <div class="kpi-one">
+                    <span>3,333</span>
+                  </div>
+                  <div class="kpi-two">
+                    <span>CC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="author-post-card">
+                            <span class="author-post-card-heading">More by ONESICK</span>
+                            <span class="author-post-card-divider-svg">
+                                <svg width="266" height="1" viewBox="0 0 266 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0.5" y1="0.5" x2="265.5" y2="0.5" stroke="#666666" stroke-linecap="round" stroke-dasharray="2 2"/>
+                                </svg>
+                            </span>
+                            <span class="author-post">How do you break your Hand with a DB??</span>
+                            <span class="author-post">How do you break your Hand with a DB??</span>
+                            <span class="author-post">How do you break your Hand with a DB??</span>
+                            <span class="author-post">How do you break your Hand with a DB??</span>
+                        </div> -->
+          </div>
+          <div class="recent-steroid-reviews">
+            <div class="heading">
+              <span class="heading-text">RECENT STEROID REVIEWS</span>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="new-submissions">
+            <span class="new-submissions-heading"> NEW SUMBISSIONS </span>
+            <div class="new-submission-card">
+              <span class="bold"
+                >Noreplay<span> » almightypeptides.com </span></span
+              >
+            </div>
+            <div class="new-submission-card">
+              <span class="bold">PRO SUPPS<span> » pro-supps.com </span></span>
+            </div>
+            <div class="new-submission-card">
+              <span class="bold">PRO<span> » balkanpharm.com </span></span>
+            </div>
+            <div class="new-submission-card">
+              <span class="bold">PROdex<span> » britishroids.com </span></span>
+            </div>
+            <div class="new-submission-card">
+              <span class="bold">PROXIS<span> » roid-stop.is </span></span>
+            </div>
+            <div class="new-submission-card">
+              <span class="bold">PRO<span> » balkanpharm.com </span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

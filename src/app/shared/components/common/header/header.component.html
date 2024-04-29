@@ -1,0 +1,100 @@
+<div class="header">
+  <div class="header-content">
+    <div class="header-menu">
+      <div class="menu-tab">
+        <div
+          (click)="setActiveNav('sources')"
+          [ngClass]="{ active: activeNav == 'sources' }"
+        >
+          Sources
+        </div>
+        <div class="menu-tab-content" *ngIf="activeNav == 'sources'">
+          <div (click)="goToPage('source-review')">Reviews</div>
+          <div (click)="goToPage('source-talk')">Talk</div>
+        </div>
+      </div>
+      <div class="menu-tab">
+        <div
+          (click)="setActiveNav('steroids')"
+          [ngClass]="{ active: activeNav == 'steroids' }"
+        >
+          Steroids
+        </div>
+        <div class="menu-tab-content" *ngIf="activeNav == 'steroids'">
+          <div (click)="goToPage('steroids-review')">Reviews</div>
+          <div (click)="goToPage('steroids-talk')">Talk</div>
+          <div (click)="goToPage('steroid-cycles')">Cycles</div>
+        </div>
+      </div>
+      <div class="menu-tab">
+        <div (click)="goToPage('community-forums')">Community</div>
+      </div>
+      <div class="menu-search">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            opacity="0.19"
+            d="M15.7559 14.2549H14.9659L14.6859 13.9849C15.6659 12.8449 16.2559 11.3649 16.2559 9.75488C16.2559 6.16488 13.3459 3.25488 9.75586 3.25488C6.16586 3.25488 3.25586 6.16488 3.25586 9.75488C3.25586 13.3449 6.16586 16.2549 9.75586 16.2549C11.3659 16.2549 12.8459 15.6649 13.9859 14.6849L14.2559 14.9649V15.7549L19.2559 20.7449L20.7459 19.2549L15.7559 14.2549ZM9.75586 14.2549C7.26586 14.2549 5.25586 12.2449 5.25586 9.75488C5.25586 7.26488 7.26586 5.25488 9.75586 5.25488C12.2459 5.25488 14.2559 7.26488 14.2559 9.75488C14.2559 12.2449 12.2459 14.2549 9.75586 14.2549Z"
+            fill="white"
+          />
+        </svg>
+        <input type="text" name="" id="" placeholder="Search" />
+      </div>
+      <!-- <div class="last"> -->
+      <div class="favourite">
+        <span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              d="M9.99935 17.6457L8.79102 16.5457C4.49935 12.654 1.66602 10.0873 1.66602 6.93734C1.66602 4.37067 3.68268 2.354 6.24935 2.354C7.69935 2.354 9.09102 3.029 9.99935 4.09567C10.9077 3.029 12.2993 2.354 13.7493 2.354C16.316 2.354 18.3327 4.37067 18.3327 6.93734C18.3327 10.0873 15.4993 12.654 11.2077 16.554L9.99935 17.6457Z"
+              fill="#F5C527"
+            />
+          </svg>
+        </span>
+      </div>
+      <button
+        type="button"
+        class="button-signin"
+        routerLink="/create-account"
+        *ngIf="!isLogged"
+      >
+        <span>Sign up</span>
+      </button>
+      <button
+        type="button"
+        class="button-login"
+        routerLink="/sign-in"
+        *ngIf="!isLogged"
+      >
+        <span>Login</span>
+      </button>
+      <button
+        type="button"
+        class="button-signin"
+        routerLink="/my-account"
+        *ngIf="isLogged"
+      >
+        <span>My Account</span>
+      </button>
+      <button
+        type="button"
+        class="button-login"
+        *ngIf="isLogged"
+        (click)="logout()"
+      >
+        <span>Logout</span>
+      </button>
+      <!-- </div> -->
+    </div>
+  </div>
+</div>

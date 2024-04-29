@@ -1,0 +1,28 @@
+.footer{
+    height: 300px;
+    width: 100%;
+    background: #000;
+    margin-top: 50px;
+    padding-top: 20px;
+    /* position: fixed; */
+    position: relative;
+    bottom: 0;
+}
+.footer .heading{
+    color: #F5C527;
+    margin-left: 32px;
+}
+.footer ul li{
+    list-style-type: none;
+    color: white;
+}
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+.footer ul li a span{
+    color: #D9D9D969;
+}
+.footer ul li span{
+    color: #D9D9D969;
+}

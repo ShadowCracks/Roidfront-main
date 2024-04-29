@@ -1,0 +1,65 @@
+<div class="main-wrapper mx-auto mt-3">
+  <div class="main-section mt-3 d-flex">
+    <div>
+      <div class="d-flex gap-2">
+        <a href="javascript:void(0);" class="rounded-sm-btn fs-7 fw-bold bg-black text-white">Reviews</a>
+        <a routerLink="/sources/talk" class="rounded-sm-btn fs-7 fw-bold">Talk</a>
+      </div>
+      <div class="list-container mt-5">
+        <div class="list-options d-flex gap-2 justify-content-end">
+          <select name="cars" id="cars" class="cursor-pointer fs-8 fw-bold">
+            <option selected disabled value="all">All Categories</option>
+            <option value="1">Category # 1</option>
+            <option value="2">Category # 2</option>
+            <option value="3">Category # 2</option>
+          </select>
+          <select name="cars" id="cars" class="cursor-pointer fs-8 fw-bold">
+            <option selected disabled value="world">Worldwide</option>
+            <option value="1">Option # 1</option>
+            <option value="2">Option # 2</option>
+            <option value="3">Option # 2</option>
+          </select>
+        </div>
+        <div class="list-body d-flex flex-column gap-2 mt-3">
+
+          @for(source of (sources$ | async); track source._id; let idx = $index) {
+          <div class="list-item bg-bg3 rounded-xl px-4 d-flex align-items-center cursor-pointer">
+            <div [routerLink]="['/sources/review', source._id]" class="list-item_content-wrapper d-flex align-items-center">
+              <div class="list-item_number d-flex align-items-center">
+                <div class="flex align-items-center justify-content-center">
+                  <span
+                    class="fs-9 fw-bold d-flex align-items-center justify-content-center bg-black text-white circle-tag rounded-xl text-center">{{
+                    idx + 1 }}</span>
+                </div>
+                <h2 class="fs-3 fw-bold m-0">{{source.score | number: '1.2-2' }}</h2>
+              </div>
+              <div class="list-item_content">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                  <p class="fw-bold text-uppercase m-0">{{ source.url }}</p>
+                  <span class="m-0 fs-10">{{ source.user.username }} | {{ source.createdAt | date:'MMM, y' }}</span>
+                </div>
+                <p class="fs-9-5 p-0">
+                  {{ source.description }}
+                </p>
+              </div>
+            </div>
+            <div class="list-item_points min-w-5e d-flex gap-1 flex-wrap">
+              @for(sourcePoint of source.points; track sourcePoint; let last = $last) {
+              <span [ngClass]="last ? 'bg-primary-800' : 'bg-bg4'" class="rounded-xl p-1 px-2 fs-9 fw-semibold">
+                {{ sourcePoint.average | number: '1.2-2'}}
+              </span>
+              }
+            </div>
+          </div>
+          }
+
+        </div>
+        <app-pagination></app-pagination>
+      </div>
+    </div>
+    <aside class="d-flex flex-column gap-3">
+      <app-recent-reviews [type]="'Review'" [reference]="'Source'"></app-recent-reviews>
+      <img src="../../../../assets/imgs/aside-img.png" alt="" />
+    </aside>
+  </div>
+</div>

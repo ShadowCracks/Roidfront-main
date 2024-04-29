@@ -1,0 +1,15 @@
+.page-content{
+    padding: 10px 100px;
+}
+.tab-content{
+    height: 800px;
+    /* background: url(../../../../../assets/images/user-account/profile-pic.png); */
+}
+.user-image img{
+    width: 280px;
+    height: 280px;
+}
+::ng-deep .mdc-tab {
+    padding-left: 0px;
+    padding-right: 0px;
+  }

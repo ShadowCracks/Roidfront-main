@@ -1,0 +1,33 @@
+.nav-link {
+  color: #FFF !important;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
+
+.input-search {
+  background-color: black;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-left: none;
+}
+
+.input-search-icon {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-right: none !important;
+}
+
+.input-search::placeholder {
+  color: white;
+}
+
+.input-group {
+  margin-left: 50px;
+}
+
+#addon-wrapping {
+  background: #000;
+  color: white;
+}

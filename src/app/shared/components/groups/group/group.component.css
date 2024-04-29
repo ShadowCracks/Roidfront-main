@@ -1,0 +1,155 @@
+/* .group-list{
+    display: flex;
+} */
+.group-card {
+  width: 190px;
+  height: 200px;
+  /* transform: rotate(90deg); */
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f9f2de;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0px 20px 20px 0px;
+}
+.group-card:hover {
+  background: #e6ddc1;
+  cursor: pointer;
+}
+.group-status {
+  display: flex;
+  width: 136px;
+  height: 22px;
+  padding: 9px 6.5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  border-radius: 64px;
+  background: #c4c4c4;
+}
+.group-status span {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px; /* 140% */
+  letter-spacing: -0.4px;
+}
+.group-name {
+  color: var(--background-1, #191a1b);
+  /* Typography/LG/600 | 1.5 */
+  font-family: Public Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px; /* 150% */
+  margin-top: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.group-description {
+  width: 170px;
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-top: 10px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.group-author {
+  color: #000;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-top: 10px;
+}
+.group-author span {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+}
+.group-visibility {
+  display: inline-flex;
+  height: 17px;
+  padding: 0px 6.5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+  border-radius: 64px;
+  background: #f5c527;
+  margin-top: 10px;
+}
+.group-visibility span {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px; /* 140% */
+  letter-spacing: -0.4px;
+}
+.my-groups {
+  width: 190px;
+  height: 228px;
+  /* transform: rotate(90deg); */
+  flex-shrink: 0;
+  background-color: #e4e4e4;
+  padding: 10px;
+  border-radius: 10px;
+}
+.my-groups-heading {
+  /* width: 92px;
+    height: 8.695px; */
+  flex-shrink: 0;
+  color: var(--background-1, #191a1b);
+  /* Typography/LG/600 | 1.5 */
+  font-family: Public Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px; /* 150% */
+}
+.my-group-name {
+  /* width: 31px;
+    height: 194px; */
+  /* transform: rotate(90deg); */
+  flex-shrink: 0;
+  background-color: #f5c527;
+  margin: 10px 0px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.my-group-name span {
+  color: var(--background-1, #191a1b);
+  text-align: center;
+  font-family: Public Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px; /* 225% */
+}

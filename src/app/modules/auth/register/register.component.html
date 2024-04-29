@@ -1,0 +1,181 @@
+<main class="auth-container create-account d-flex">
+  <div class="left d-flex align-items-end justify-content-center pb-5">
+    <a href="#" class="mb-5">
+      <img src="images/icon-home-yellowbg.svg" alt="" />
+    </a>
+  </div>
+  <div class="position-relative right mx-auto d-flex flex-column align-items-start justify-content-center">
+    <div class="bg-pink p-3 rounded">
+      <h5 class="fw-bold text-black">IMPORTANT</h5>
+      <p class="text-black fs-6 mb-0">
+        You may create an account here if you're at least 25 years old. By
+        creating an account, you agree to our
+        <a href="#" class="fw-bold">terms of service.</a>
+      </p>
+    </div>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="d-flex flex-column gap-2 w-100 mt-3">
+      <!-- Username -->
+      <div class="d-flex flex-column w-100">
+        <label class="fw-bold fs-7" for="username">Username * </label>
+        <input formControlName="username" class="mx-2 w-100 input-item fw-bold fs-9" type="text" placeholder="Name here"
+          id="username" />
+      </div>
+      <!-- Email -->
+      <div class="d-flex flex-column w-100">
+        <label class="fw-bold fs-7" for="email">E-Mail Address * </label>
+        <input formControlName="email" class="mx-2 w-100 input-item fw-bold fs-9" type="email" placeholder="Email"
+          id="email" />
+      </div>
+      <!-- Password -->
+      <div class="d-flex flex-column w-100">
+        <label class="fw-bold fs-7" for="password">Password * </label>
+        <input formControlName="password" class="mx-2 w-100 input-item fw-bold fs-9" type="password"
+          placeholder="Password" id="password" />
+      </div>
+      <!-- Confirm Password -->
+      <div class="d-flex flex-column w-100">
+        <label class="fw-bold fs-7" for="confirmPassword">Confirm Password *</label>
+        <input formControlName="confirmPassword" class="mx-2 w-100 input-item fw-bold fs-9" type="password"
+          placeholder="Confirm Password" id="confirmPassword" />
+      </div>
+      <div class="bg-blue p-3 rounded px-5 mt-3 mb-2">
+        <h5 class="fw-bold text-black text-center">Join a public group</h5>
+        <div class="row">
+          <div class="col-md-4 p-1">
+            <label for="remember" class="d-flex align-items-center"
+              ><input
+                type="checkbox"
+                id="remember"
+                class="checkbox-sm"
+                value="kiwis"
+              />
+              <span class="fs-9 fw-semibold"
+                >Aussies and kiwis lounge</span
+              ></label
+            >
+          </div>
+          <div class="col-md-2 p-1">
+            <label for="remember" class="d-flex align-items-center"
+              ><input
+                type="checkbox"
+                id="remember"
+                class="checkbox-sm"
+                value="pets"
+              />
+              <span class="fs-9 fw-semibold">Our Pets</span></label
+            >
+          </div>
+          <div class="col-md-3 p-1">
+            <label for="remember" class="d-flex align-items-center"
+              ><input
+                type="checkbox"
+                id="remember"
+                class="checkbox-sm"
+                value="combat"
+              />
+              <span class="fs-9 fw-semibold">Combat Sport</span></label
+            >
+          </div>
+          <div class="col-md-3 p-1">
+            <label for="remember" class="d-flex align-items-center"
+              ><input
+                type="checkbox"
+                id="remember"
+                class="checkbox-sm"
+                value="cycles"
+              />
+              <span class="fs-9 fw-semibold">Advanced Cycles</span></label
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 p-1">
+            <label for="remember" class="d-flex align-items-center"
+              ><input
+                type="checkbox"
+                id="remember"
+                class="checkbox-sm"
+                value="kiwis"
+              />
+              <span class="fs-9 fw-semibold"
+                >Aussies and kiwis lounge</span
+              ></label
+            >
+          </div>
+          <div class="col-md-2 p-1">
+            <label for="remember" class="d-flex align-items-center"
+              ><input
+                type="checkbox"
+                id="remember"
+                class="checkbox-sm"
+                value="pets"
+              />
+              <span class="fs-9 fw-semibold">Our Pets</span></label
+            >
+          </div>
+          <div class="col-md-3 p-1">
+            <label for="remember" class="d-flex align-items-center"
+              ><input
+                type="checkbox"
+                id="remember"
+                class="checkbox-sm"
+                value="combat"
+              />
+              <span class="fs-9 fw-semibold">Combat Sport</span></label
+            >
+          </div>
+          <div class="col-md-3 p-1">
+            <label for="remember" class="d-flex align-items-center"
+              ><input
+                type="checkbox"
+                id="remember"
+                class="checkbox-sm"
+                value="cycles"
+              />
+              <span class="fs-9 fw-semibold">Advanced Cycles</span></label
+            >
+          </div>
+        </div>
+      </div>
+      <!-- About Yourself -->
+      <div class="d-flex flex-column w-100">
+        <label class="fw-bold fs-7" for="aboutMe">About Yourself * </label>
+        <input formControlName="aboutMe" class="mx-2 w-100 input-item fw-bold fs-9" type="text"
+          placeholder="About yourself" id="aboutMe" />
+      </div>
+      <!-- Birth Date -->
+      <div class="d-flex flex-column w-100">
+        <label class="fw-bold fs-7" for="birthDate">Your Birth Date * </label>
+        <input formControlName="birthDate" class="mx-2 w-100 input-item fw-bold fs-9" type="date" placeholder="DOB"
+          id="birthDate" />
+      </div>
+      <!-- Weight -->
+      <div class="d-flex flex-column w-100">
+        <label class="fw-bold fs-7" for="weight">Weight * </label>
+        <input formControlName="weight" class="mx-2 w-100 input-item fw-bold fs-9" type="number" placeholder="Weight"
+          id="weight" />
+      </div>
+      <!-- Height -->
+      <div class="d-flex flex-column w-100">
+        <label class="fw-bold fs-7" for="height">Height * </label>
+        <input formControlName="height" class="mx-2 w-100 input-item fw-bold fs-9" type="number" placeholder="Height"
+          id="height" />
+      </div>
+      <!-- Body Fat -->
+      <div class="d-flex flex-column w-100">
+        <label class="fw-bold fs-7" for="bodyFat">Body fat * </label>
+        <select formControlName="bodyFat" class="mx-2 w-100 input-item fw-bold fs-9" id="bodyFat">
+          <option disabled selected>-- Select a value --</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+        </select>
+      </div>
+      <!-- Submit Button -->
+      <button style="width: 85%" type="submit" class="bg-black text-white mx-auto mt-3">
+        Create New Account
+      </button>
+    </form>
+
+  </div>
+</main>

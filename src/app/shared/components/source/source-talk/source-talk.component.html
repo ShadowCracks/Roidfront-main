@@ -1,0 +1,167 @@
+<div class="source-talk">
+  <div class="banner">
+    <p>Source Talk</p>
+  </div>
+  <div class="page-content">
+    <div class="navLink">
+      <span class="home">Home</span>
+      <span class="arrow">></span>
+      <span class="nav-text">Source Talk</span>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="toggle-buttons-group">
+            <button
+              type="button"
+              class="toggle-button"
+              (click)="routeToSourceReview()"
+            >
+              Reviews
+            </button>
+            <button type="button" class="toggle-button toggle-button-active">
+              Talk
+            </button>
+          </div>
+          <div class="source-talk-card-box">
+            <div
+              class="source-talk-card"
+              *ngFor="let sourceTalk of sourceTalkArray"
+              (click)="routeToSourceTalkInside(sourceTalk.sourceId)"
+            >
+              <span class="source-talk-card-title">
+                {{ sourceTalk.sourceName }}
+              </span>
+              <span class="source-talk-card-description">
+                <span class="one">{{ sourceTalk.sourceAddedBy }}</span>
+                <span class="two"
+                  >| &nbsp;&nbsp;{{ sourceTalk.sourceAddedTime | date }}</span
+                >
+              </span>
+              <span class="divider-one">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2"
+                  height="23"
+                  viewBox="0 0 2 23"
+                  fill="none"
+                >
+                  <path
+                    d="M0.499993 22.5C0.499993 22.7761 0.723851 23 0.999993 23C1.27614 23 1.49999 22.7761 1.49999 22.5L0.499993 22.5ZM0.5 -1.48619e-07L0.5 0.9375L1.5 0.9375L1.5 1.48619e-07L0.5 -1.48619e-07ZM0.499999 2.8125L0.499999 4.6875L1.5 4.6875L1.5 2.8125L0.499999 2.8125ZM0.499998 6.5625L0.499997 8.4375L1.5 8.4375L1.5 6.5625L0.499998 6.5625ZM0.499997 10.3125L0.499996 12.1875L1.5 12.1875L1.5 10.3125L0.499997 10.3125ZM0.499996 14.0625L0.499995 15.9375L1.5 15.9375L1.5 14.0625L0.499996 14.0625ZM0.499995 17.8125L0.499994 19.6875L1.49999 19.6875L1.49999 17.8125L0.499995 17.8125ZM0.499994 21.5625L0.499993 22.5L1.49999 22.5L1.49999 21.5625L0.499994 21.5625Z"
+                    fill="#847D67"
+                  />
+                </svg>
+              </span>
+              <span class="kpi-one"
+                ><span
+                  >{{ sourceTalk.lastCommentUserName }}, 4 min 29 sec ago</span
+                ></span
+              >
+              <span class="kpi-two"
+                ><span>{{
+                  sourceTalk.numOfComments.toLocaleString("en-GB")
+                }}</span></span
+              >
+            </div>
+            <div class="review-pagination">
+              <img
+                src="../../../../../assets/images/pages/arrow-left-pagination.png"
+                alt=""
+              />
+              <button
+                type="button"
+                [class]="page === 0 ? 'pagination-first' : 'pagination-second'"
+                (click)="changePage(0)"
+              >
+                1
+              </button>
+              <button
+                type="button"
+                [class]="page === 1 ? 'pagination-first' : 'pagination-second'"
+                (click)="changePage(1)"
+              >
+                2
+              </button>
+              <button
+                type="button"
+                [class]="page === 2 ? 'pagination-first' : 'pagination-second'"
+                (click)="changePage(2)"
+              >
+                3
+              </button>
+              <button type="button" class="pagination-second">...</button>
+              <button type="button" class="pagination-second">25</button>
+              <img
+                src="../../../../../assets/images/pages/arrow-right-pagination.png"
+                alt=""
+              />
+            </div>
+            <!-- <div class="review-pagination">
+                            <img src="../../../../../assets/images/pages/arrow-left-pagination.png" alt="">
+                            <button type="button" [class]="page==0?pagination-first:pagination-second" class="pagination-first" (click)="changePage(0)">1</button>
+                            <button type="button" class="pagination-second" (click)="changePage(1)">2</button>
+                            <button type="button" class="pagination-second" (click)="changePage(2)">3</button>
+                            <button type="button" class="pagination-second">...</button>
+                            <button type="button" class="pagination-second">25</button>
+                            <img src="../../../../../assets/images/pages/arrow-right-pagination.png" alt="">
+                        </div> -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="recent-steroid-reviews">
+            <div class="heading">
+              <span class="heading-text">RECENT STEROID REVIEWS</span>
+            </div>
+            <div
+              class="recent-steriod-reviews-card"
+              *ngFor="let steroidReview of recentSteroidReviews"
+            >
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  {{ steroidReview.text }}
+                  <span> « {{ steroidReview.username }}</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex; justify-content: space-between"
+              >
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  {{ steroidReviews[steroidReview.reviewId]?.heading }}
+                </button>
+                <div style="display: flex; gap: 5px">
+                  <span class="recent-steroid-reviews-card-marker-one">
+                    <span class="vector">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="6"
+                        viewBox="0 0 12 6"
+                        fill="none"
+                      >
+                        <path
+                          d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </span>
+                  <span class="recent-steroid-reviews-card-marker-two">
+                    <span class="text">{{ steroidReview.stars }}/10</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-image"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

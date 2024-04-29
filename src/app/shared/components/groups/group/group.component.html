@@ -1,0 +1,66 @@
+<div class="groups">
+  <div class="banner">
+    <p>Groups</p>
+  </div>
+  <div class="page-content">
+    <div class="navLink">
+      <span class="home">Home</span>
+      <span class="arrow">></span>
+      <span class="nav-text">Groups</span>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="col-md-8 group-list">
+          <div class="row">
+            <div
+              class="group-card"
+              *ngFor="let group of groups"
+              (click)="goToDetails(group.groupId)"
+            >
+              <span class="group-status"
+                ><span>Request group membership</span></span
+              >
+              <span class="group-name">{{ group.heading }}</span>
+              <span class="group-description">
+                {{ group.text }}
+              </span>
+              <span class="group-author"
+                >Author: <span>{{ group.author }}</span></span
+              >
+              <span class="group-visibility"
+                ><span>{{ group.type }}</span></span
+              >
+            </div>
+          </div>
+          <div class="review-pagination">
+            <img
+              src="../../../../../assets/images/pages/arrow-left-pagination.png"
+              alt=""
+            />
+            <button type="button" class="pagination-first">1</button>
+            <button type="button" class="pagination-second">2</button>
+            <button type="button" class="pagination-second">3</button>
+            <button type="button" class="pagination-second">...</button>
+            <button type="button" class="pagination-second">25</button>
+            <img
+              src="../../../../../assets/images/pages/arrow-right-pagination.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="my-groups">
+            <div class="my-groups-heading"><span>My Groups</span></div>
+            <div class="my-group-name"><span>Advanced cycles v2.0</span></div>
+            <div class="my-group-name">
+              <span>Aussies and kiwis lounge</span>
+            </div>
+            <div class="my-group-name">
+              <span>The Recovery Lounge Group</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

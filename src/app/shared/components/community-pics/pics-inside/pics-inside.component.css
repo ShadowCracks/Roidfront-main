@@ -1,0 +1,102 @@
+.pic-inside-content-card{
+    width: 808px;
+    height: 364px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #EEE8D3;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+.pic-inside-content-card-heading span{
+    width: 644px;
+    height: 20px;
+    flex-shrink: 0;
+    color: var(--background-1, #191A1B);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+}
+.pic-inside-content-card-description .heading-one{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: -0.24px;
+    text-transform: capitalize;
+}
+.pic-inside-content-card-description .heading-two{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    text-transform: capitalize;
+}
+.pic-inside-content-card-description .description-text{
+    color: #000;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    text-transform: capitalize;
+}
+.review-button-one {
+    display: flex;
+    width: 198px;
+    padding: 2px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 15px;
+    background: var(--primary-800, #F5C527);
+    color: #191A1B;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 200% */
+}
+.review-button-one{
+    border: none;
+    position: relative;
+    left: 300px;
+}
+.review-box{
+    width: 818px;
+    height: 350px;
+}
+.promo-card{
+    margin-top: 20px;
+    width: 325px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    /* background: #D9D9D9; */
+    background: url(../../../../../assets/images/pages/promo-image-02.png), lightgray 0% / cover no-repeat;
+}
+
+/* Photo Gallery Starts */
+
+.photo-gallery-one{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.photo-gallery-one .photo{
+    width: 120px;
+    height: 92px;
+    flex-shrink: 0;
+}
+
+/* Photo Gallery Ends */

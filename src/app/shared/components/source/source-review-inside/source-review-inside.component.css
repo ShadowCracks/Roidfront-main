@@ -1,0 +1,195 @@
+.steroid-source-review-card-three {
+  width: 326px;
+  height: 78px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.41);
+}
+.new-submissions {
+  width: 326px;
+  height: 257px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.41);
+  margin-top: 20px;
+  padding: 5px 20px;
+}
+.new-submissions-heading {
+  width: 360px;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px; /* 333.333% */
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+}
+.new-submission-card {
+  width: 291px;
+  height: 27px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e2e2e2;
+  padding: 0px 10px;
+  margin-bottom: 5px;
+}
+.new-submission-card .bold {
+  width: 247.78px;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 120% */
+  text-transform: capitalize;
+}
+.new-submission-card .bold span {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: capitalize;
+}
+.review-banner {
+  max-width: 808px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #eee8d3;
+  padding: 20px;
+}
+.review-banner-image {
+  width: 195px;
+  height: 195px;
+  border-radius: 10px;
+}
+.review-banner-content {
+  margin-left: 20px;
+  margin-top: 20px;
+  border-right: 2px dashed white;
+}
+.review-banner-content-heading {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+.review-banner-content-star {
+  display: flex;
+  margin: 10px 0;
+}
+.review-banner-details {
+  display: flex;
+}
+.review-banner-table-container {
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px 15px;
+  width: 100%;
+}
+.review-banner-table-container table {
+  background: #fff;
+  width: 100%;
+}
+.review-banner-table-container table thead {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+}
+.review-banner-table-container table thead tr {
+  border-bottom: 1px solid #555;
+}
+.review-banner-table-container table thead tr th {
+  padding-bottom: 10px;
+}
+.review-banner-table-container table thead tr th:nth-child(2) {
+  border-right: 1px solid #555;
+}
+.review-banner-table-container table thead tr th:nth-child(2),
+th:nth-child(3) {
+  text-align: center;
+}
+.review-banner-table-container table tbody tr {
+  border-bottom: 1px solid #555;
+}
+.review-banner-table-container table tbody tr:nth-child(4) {
+  border-bottom: none;
+}
+.review-banner-table-container table tbody tr:first-child td {
+  padding-top: 10px;
+}
+.review-banner-table-container table tbody tr td:nth-child(2) {
+  border-right: 1px solid #555;
+}
+.review-banner-table-container table tbody tr td {
+  color: var(--background-3, #555);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  text-transform: capitalize;
+}
+.review-banner-table-container table tbody tr td:nth-child(2),
+td:nth-child(3) {
+  text-align: center;
+}
+.discuss-button-container {
+  display: flex;
+  align-items: flex-end;
+}
+.discuss-button {
+  padding: 5px 12px;
+  border-radius: 15px;
+  border: none;
+  background: var(--primary-800, #f5c527);
+  margin: 0 20px;
+}
+.review-banner-kpi-group-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.review-banner-kpi-group {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr;
+}
+.review-banner-kpi {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px;
+  background: #f5c527;
+}
+.review-banner-kpi div:first-child {
+  color: #0f0f0f;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px; /* 120% */
+  letter-spacing: -1px;
+}
+.review-banner-kpi div:last-child {
+  color: #0f0f0f;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 240% */
+  letter-spacing: -0.5px;
+}

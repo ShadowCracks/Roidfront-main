@@ -1,0 +1,222 @@
+<div class="steroid-cycles">
+  <div class="banner">
+    <p>Cycles</p>
+  </div>
+  <div class="page-content">
+    <div class="navLink">
+      <span class="home">Home</span>
+      <span class="arrow">></span>
+      <span class="nav-text">Steroid Cycles</span>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="steroid-cycles-button">
+            <div class="toggle-buttons-group">
+              <a href="/steroids-review"
+                ><button type="button" class="toggle-button">Reviews</button></a
+              >
+              <a href="/steroids-talk"
+                ><button type="button" class="toggle-button">Talk</button></a
+              >
+              <button type="button" class="toggle-button toggle-button-active">
+                Steroid cycles
+              </button>
+            </div>
+          </div>
+          <div class="steroid-cycles-box">
+            <div
+              class="steroid-cycle-card"
+              *ngFor="let cycle of cycles"
+              (click)="goToDetails()"
+            >
+              <div class="steroid-cycles-card-image-one"></div>
+              <div class="steroid-cycles-card-image-two"></div>
+              <div class="steroid-cycle-card-content">
+                <span class="steroid-cycle-card-heading">
+                  {{ cycle.heading }}
+                </span>
+                <span class="steroid-cycle-card-description">
+                  {{ cycle.description }}
+                </span>
+              </div>
+              <div class="steroid-cycle-card-kpi">
+                <div class="steroid-cycles-card-kpi-top">
+                  <span class="steroid-cycles-card-kpi-top-one">{{
+                    cycle.username
+                  }}</span>
+                  <span class="steroid-cycles-card-kpi-top-two">
+                    | {{ getDateFromTimestamp(cycle.createdAt) }}</span
+                  >
+                </div>
+                <div class="steroid-cycle-card-kpi-bottom">
+                  <button
+                    type="button"
+                    class="steroid-cycles-card-kpi-button-one"
+                  >
+                    <span>{{ cycle.userId }}</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="steroid-cycles-card-kpi-button-two"
+                  >
+                    <span>{{ cycle.score }}</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="review-pagination">
+              <img
+                src="../../../../../assets/images/pages/arrow-left-pagination.png"
+                alt=""
+              />
+              <button type="button" class="pagination-first">1</button>
+              <button type="button" class="pagination-second">2</button>
+              <button type="button" class="pagination-second">3</button>
+              <button type="button" class="pagination-second">...</button>
+              <button type="button" class="pagination-second">25</button>
+              <img
+                src="../../../../../assets/images/pages/arrow-right-pagination.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="recent-steroid-reviews">
+            <div class="heading">
+              <span class="heading-text">RECENT STEROID REVIEWS</span>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="promo-image"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

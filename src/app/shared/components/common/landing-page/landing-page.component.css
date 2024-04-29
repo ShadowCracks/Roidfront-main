@@ -1,0 +1,76 @@
+.banner{
+    height: 90px;
+    padding-top: 20px;
+    background: #F5C527;
+    text-align: center;
+    font-size: 35px;
+}
+.page-content{
+    /* margin: 0px 150px; */
+    padding: 0px 100px;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+}
+.top-buttons{
+    margin-right: 15px !important;
+}
+.record-row{
+    display: flex;
+    height: 42px;
+    background-color: #EEE8D3;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 8px 10px
+}
+
+.record-row .heading{
+    margin-left: 15px;
+    font-size: 16px;
+}
+.record-row .subheading{
+    margin-left: 15px;
+    font-size: 14px;
+}
+.record-row-star{
+    margin-left: 250px;
+}
+.record-row .score{
+    margin-left: 15px;
+    background-color: #C4C4C4;
+    color: black;
+    padding: 0px 10px;
+    border-radius: 12px;
+}
+.record-row .rating{
+    margin-left: 15px;
+    background-color: #F5C527;
+    color: black;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.card-one{
+    padding: 15px;
+    background-color: #D9D9D969;
+}
+.card-one .dropdown{
+    margin-bottom: 10px;
+}
+.card-one .dropdown a{
+    width: 100%;
+    background-color: #D9D9D969;
+    border-radius: 20px;
+}
+.card-one button{
+    width: 100%;
+    border-radius: 20px;
+}
+.card-two{
+    padding: 15px;
+    background-color: #D9D9D969;
+    margin-top: 30px;
+}
+.card-two .card-two-row{
+    background-color: #E2E2E2;
+    padding: 10px;
+}

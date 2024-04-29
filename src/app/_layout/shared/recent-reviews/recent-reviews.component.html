@@ -1,0 +1,21 @@
+<div class="aside-card bg-bg6 rounded-lg">
+  <h4 class="">LATEST {{reference ? reference.toUpperCase(): ''}} REVIEWS</h4>
+  <div class="d-flex flex-column gap-1">
+
+    @for(comment of (comments$ | async); track comment._id; let idx = $index) {
+      <div class="aside-card_subcard bg-bg7 rounded-lg">
+        <p class="fs-9 fw-medium m-0 mb-1">
+          {{ comment.comments }} « <span class="fw-bold">{{ comment.user.username }}</span>
+        </p>
+        <div class="d-flex align-items-center justify-content-between">
+          <span class="aside-tags text-primary-800 bg-black rounded-xl fs-10 fw-medium">Trenbolone-e 200</span>
+          <div class="d-flex align-items-center justify-content-between gap-1">
+            <span class="p-2 px-2 rounded-xl bg-green d-flex align-items-center"><img
+                src="../../../../assets/icons/icon-tick.svg" alt="" /></span>
+            <span class="p-1 px-2 rounded-xl bg-primary-800 fs-10 fw-bold">9/10</span>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

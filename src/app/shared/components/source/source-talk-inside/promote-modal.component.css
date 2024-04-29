@@ -1,0 +1,34 @@
+.promote-modal {
+  padding: 20px 50px;
+}
+
+.promote-options {
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.promote-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.promote-button {
+  outline: none;
+  border: 1px solid #333;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.promote-button:hover {
+  background-color: #333;
+  color: #eee;
+}
+
+.promote-select {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+}

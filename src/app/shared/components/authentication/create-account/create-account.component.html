@@ -1,0 +1,85 @@
+<div class="create-account-page">
+    <div class="register-image">
+
+    </div>
+    <div class="register-content">
+        <!-- <h1 style="margin: 20px;">Hello</h1> -->
+        <span class="back-to-signup" routerLink="/sign-in">
+            Already have an account? <span> Log in</span>
+        </span>
+        <div class="important-card">
+            <span class="text-style-one">IMPORTANT</span><br>
+            <span class="text-style-two">YOU MAY CREATE AN ACCOUNT HERE, IF YOU'RE AT LEAST 25 YEARS OLD.</span><br>
+            <span class="text-style-two"> BY CREATING AN ACCOUNT YOU AGREE TO OUR </span>
+            <span class="text-style-three">TERMS OF SERVICE.</span>
+        </div>
+        <div class="form-one-card">
+            <span class="text-label">Usermane *</span><br>
+            <input type="text" name="" id="userNameId" placeholder="Name" [(ngModel)]="userName" autocomplete="off">
+            <span class="text-label">E-Mail Address *</span><br>
+            <input type="email" name="" id="emailId" placeholder="Email" [(ngModel)]="emailAddress" autocomplete="off">
+            <span class="text-label">Password *</span><br>
+            <input type="password" name="" id="passwordId" placeholder="Password" [(ngModel)]="password" autocomplete="off">
+            <span class="text-label">Confirm Password *</span><br>
+            <input type="password" name="" id="confirmpasswordId" placeholder="Password" [(ngModel)]="confirmPassword" autocomplete="off">
+        </div>
+        <div class="public-group-card">
+            <span class="public-group-card-heading">
+                Join a public group
+            </span>
+            <div class="checkbox-row">
+                <span class="checkbox"></span>
+                <span class="checkbox-text one">Aussies and kiwis lounge</span>
+                <span class="checkbox"></span>
+                <span class="checkbox-text two">Our Pets</span>
+                <span class="checkbox"></span>
+                <span class="checkbox-text three">Combat Sport</span>
+                <span class="checkbox"></span>
+                <span class="checkbox-text four">Advanced Cycles</span>
+            </div>
+            <div class="checkbox-row">
+                <span class="checkbox"></span>
+                <span class="checkbox-text one">Aussies and kiwis lounge</span>
+                <span class="checkbox"></span>
+                <span class="checkbox-text two">Our Pets</span>
+                <span class="checkbox"></span>
+                <span class="checkbox-text three">Combat Sport</span>
+                <span class="checkbox"></span>
+                <span class="checkbox-text four">Advanced Cycles</span>
+            </div>
+
+            <div class="form-one-card form-two">
+                <span class="text-label">About Yorself *</span><br>
+                <input type="text" name="" id="aboutYourselfId" placeholder="Tell us about Yourself"  [(ngModel)]="aboutYourself" autocomplete="off">
+                <span class="text-label">Your Birth Date *</span><br>
+                <input type="text" name="" id="dobId" placeholder="DD/MM/YYYY"  [(ngModel)]="dob" autocomplete="off">
+                <span class="text-label">Weight *</span><br>
+                <input type="text" name="" id="weightId" placeholder="In KG"  [(ngModel)]="weight" autocomplete="off">
+                <span class="text-label">Height *</span><br>
+                <input type="text" name="" id="heightId" placeholder="In Cm"  [(ngModel)]="height" autocomplete="off">
+                <span class="text-label">Body Fat *</span><br>
+                <!-- <input type="text" name="" id="" placeholder="-- Select a Value --"> -->
+                <select name="cars" id="cars" placeholder="-- Select a Value --"  [(ngModel)]="bodyFat" autocomplete="off">
+                    <option value="none">-- Select a Value --</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="button-container">
+                <button type="button" class="create-new-account-button" (click)="registerUser()"><span>Create New Account</span></button>
+            </div>
+        </div>
+    </div>
+</div>

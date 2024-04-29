@@ -1,0 +1,412 @@
+.banner {
+  /* width: 1512px; */
+  height: 115px;
+  flex-shrink: 0;
+  background: #f5c527;
+}
+.banner p {
+  color: var(--background-1, #191a1b);
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px; /* 102.857% */
+  text-transform: uppercase;
+  position: relative;
+  top: 40px;
+}
+.page-content {
+  /* margin: 0px 150px; */
+  padding: 0px 100px;
+}
+.navLink .home {
+  color: var(--background-1, #191a1b);
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 257.143% */
+  /* text-decoration-line: underline; */
+  text-transform: capitalize;
+}
+.navLink .arrow {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: capitalize;
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
+.navLink .nav-text {
+  color: var(--primary-800, #f5c527);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+  text-transform: capitalize;
+  margin-left: 5px;
+}
+.talk-banner {
+  max-width: 808px;
+  border-radius: 15px;
+  background: #eee8d3;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.talk-banner-image {
+  width: 195px;
+  height: 195px;
+  border-radius: 10px;
+}
+.talk-banner-content {
+  width: 100%;
+}
+.talk-banner-content-heading {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.talk-banner-details {
+  display: flex;
+}
+.talk-banner-table-container {
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px 15px;
+  width: 100%;
+}
+.talk-banner-table-container table {
+  background: #fff;
+  width: 100%;
+}
+.talk-banner-table-container table thead {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+}
+.talk-banner-table-container table thead tr {
+  border-bottom: 1px solid #555;
+}
+.talk-banner-table-container table thead tr th {
+  padding-bottom: 10px;
+}
+.talk-banner-table-container table thead tr th:nth-child(2) {
+  border-right: 1px solid #555;
+}
+.talk-banner-table-container table thead tr th:nth-child(2),
+th:nth-child(3) {
+  text-align: center;
+}
+.talk-banner-table-container table tbody tr {
+  border-bottom: 1px solid #555;
+}
+.talk-banner-table-container table tbody tr:nth-child(4) {
+  border-bottom: none;
+}
+.talk-banner-table-container table tbody tr:first-child td {
+  padding-top: 10px;
+}
+.talk-banner-table-container table tbody tr td:nth-child(2) {
+  border-right: 1px solid #555;
+}
+.talk-banner-table-container table tbody tr td {
+  color: var(--background-3, #555);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  text-transform: capitalize;
+}
+.talk-banner-table-container table tbody tr td:nth-child(2),
+td:nth-child(3) {
+  text-align: center;
+}
+.review-banner-divider {
+  width: 244.5px;
+  height: 0px;
+  transform: rotate(90deg);
+  flex-shrink: 0;
+  stroke-width: 2px;
+  stroke: #fff;
+  position: relative;
+  top: -30px;
+}
+.review-banner-kpi {
+  padding: 30px;
+}
+.review-banner-kpi-one {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 63px;
+  padding: 0px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f5c527;
+  margin: 15px;
+}
+.review-banner-kpi-one-one {
+  color: #0f0f0f;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px; /* 120% */
+  letter-spacing: -1px;
+}
+.review-banner-kpi-one-two {
+  color: #0f0f0f;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 240% */
+  letter-spacing: -0.5px;
+}
+.review-box {
+  width: 808px;
+  height: 455px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #eee;
+  margin-top: 20px;
+  padding: 20px;
+}
+.review-heading {
+  display: flex;
+  margin-bottom: 20px;
+}
+.review-heading-text {
+  width: 246px;
+  height: 36px;
+  flex-shrink: 0;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+}
+.review-button {
+  display: flex;
+  width: 122px;
+  padding: 2px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 15px;
+  background: var(--background-1, #191a1b);
+  color: white;
+  position: relative;
+  left: 350px;
+}
+.review-author-text {
+  width: 246px;
+  height: 36px;
+  flex-shrink: 0;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  text-transform: capitalize;
+}
+.review-content-text {
+  width: 768px;
+  height: 55px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: -0.24px;
+  text-transform: capitalize;
+}
+.review-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.review-pagination img {
+  width: 24px;
+  height: 24px;
+}
+.review-pagination .pagination-first {
+  display: flex;
+  padding: 5px 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #000;
+  color: white;
+}
+.review-pagination .pagination-second {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--grays-black-100, #222e42);
+  background: var(--White, #fff);
+}
+
+/* Recent Steriod reviews starts */
+.recent-steroid-reviews {
+  width: 326px;
+  height: 339px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.41);
+  padding: 0px 20px;
+}
+.recent-steroid-reviews .heading .heading-text {
+  width: 360px;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px; /* 333.333% */
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+}
+.recent-steriod-reviews-card {
+  width: 290.532px;
+  height: 75px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #e2e2e2;
+  margin-bottom: 10px;
+}
+.recent-steroid-reviews-card-content-text {
+  width: 247.78px;
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 120% */
+  text-transform: capitalize;
+}
+.recent-steroid-reviews-card-content-text span {
+  color: var(--background-1, #191a1b);
+  font-family: Open Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: capitalize;
+}
+.recent-steriod-reviews-card {
+  padding: 0px 10px;
+}
+.recent-steroid-reviews-card-button {
+  display: flex;
+  width: 80.75px;
+  height: 17px;
+  padding: 0px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #000;
+  color: var(--primary-800, #f5c527);
+  font-family: Inter;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 300% */
+  letter-spacing: -0.8px;
+}
+.recent-steroid-reviews-card-marker-one {
+  display: flex;
+  width: 22.071px;
+  height: 18.909px;
+  padding: 0px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: #4bed7d;
+  margin-left: 130px;
+}
+.recent-steroid-reviews-card-marker-one .vector {
+  width: 8.849px;
+  height: 4.222px;
+  flex-shrink: 0;
+  stroke-width: 1.5px;
+  stroke: #000;
+  position: relative;
+  top: -12px;
+}
+.recent-steroid-reviews-card-marker-two {
+  display: flex;
+  width: 21.017px;
+  height: 19px;
+  padding: 0px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background: var(--primary-800, #f5c527);
+}
+.recent-steroid-reviews-card-marker-two .text {
+  color: var(--background-1, #191a1b);
+  font-family: Inter;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 300% */
+  letter-spacing: -0.8px;
+}
+
+/* Recent Steriod reviews Ends */
+
+/* Promo Image Starts */
+
+.promo-image {
+  width: 326px;
+  height: 339px;
+  flex-shrink: 0;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: url(../../../../../assets/images/pages/promo-image-01.png),
+    lightgray 50% / cover no-repeat;
+}
+
+/* Promo Image Ends */

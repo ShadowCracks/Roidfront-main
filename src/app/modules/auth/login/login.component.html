@@ -1,0 +1,52 @@
+<main class="auth-container d-flex">
+  <div class="left d-flex align-items-end justify-content-center pb-5">
+    <a href="#" class="mb-5">
+      <img src="../../../../assets/icons/icon-home-yellowbg.svg" alt="" />
+    </a>
+  </div>
+  <div class="right mx-auto d-flex flex-column align-items-start justify-content-center">
+    <div class="d-flex flex-column">
+      <h2 class="fw-bold">Sign In to your Account</h2>
+      <p class="fw-semibold fs-7">Welcome back! please enter your detail</p>
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="w-100 px-12 d-flex flex-column gap-3 mt-3">
+      <label for="usernameOrEmail" class="input-item w-100" for="email">
+        <img src="../../../../assets/icons/icon-mail.svg" alt="" />
+        <input id="usernameOrEmail" formControlName="usernameOrEmail" class="mx-2" type="email" placeholder="Email"
+          id="email" />
+      </label>
+      <label for="password" class="input-item input-password w-100 d-flex" for="password">
+        <img src="../../../../assets/icons/icon-lock.svg" alt="" />
+        <input class="mx-2 w-100" type="password" placeholder="Password" id="password" formControlName="password"/>
+        <span role="button" tabindex="0" class="eye">
+          <img src="../../../../assets/icons/icon-eye-off.svg" alt="" />
+        </span>
+      </label>
+      <div class="d-flex justify-content-between align-items-center">
+        <label for="remember" class="d-flex align-items-center"><input type="checkbox" id="remember" />
+          <span>Remember me</span></label>
+        <a routerLink="/auth/forgot-password" class="form-link">Forgot Password</a>
+      </div>
+      <button type="submit" class="bg-black text-white mt-4">
+        Sign in
+      </button>
+    </form>
+    <div class="d-flex w-100 align-items-center justify-content-between mt-4">
+      <div class="line"></div>
+      <span style="width: 100px !important" class="fs-7">Or sign in with</span>
+      <div class="line"></div>
+
+      <!-- <div style="display: block" class="w-100 bg-black">---</div> -->
+    </div>
+    <div class="mt-4 w-100 d-flex gap-3">
+      <a href="#" class="btn-outline w-50">
+        <img src="../../../../assets/icons/icon-google.svg" alt="" />
+        <span class="fw-semibold">Google</span>
+      </a>
+      <a href="#" class="btn-outline w-50">
+        <img src="../../../../assets/icons/icon-fb.svg" alt="" />
+        <span class="fw-semibold">Facebook</span>
+      </a>
+    </div>
+  </div>
+</main>

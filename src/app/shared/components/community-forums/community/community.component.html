@@ -1,0 +1,234 @@
+<div class="community-forums">
+  <div class="banner">
+    <p>Community</p>
+  </div>
+  <div class="page-content-two">
+    <div class="navLink">
+      <span class="home">Home</span>
+      <span class="arrow">></span>
+      <span class="nav-text">Community</span>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="community-card">
+            <div class="community-card-heading">General topic forums</div>
+            <div class="community-card-box">
+              <div class="community-card-box-heading">
+                <div class="bold">General</div>
+                <!-- <span class="light">Steroids QA</span>
+                <span class="light">High & Peptides</span>
+                <span class="light">Training, Nutrition & Diet</span>
+                <span class="light">Sports Talk</span> -->
+                <div class="bold button" (click)="goToForums()">View All</div>
+              </div>
+              <div class="community-card-list">
+                <div class="community-card-item" *ngFor="let topic of topics">
+                  <div class="side">
+                    <div class="star">
+                      <img
+                        src="../../../../../assets/images/pages/record-row-star-gold.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content">
+                      <div class="content-heading">{{ topic.title }}</div>
+                      <div class="content-description">
+                        {{ topic.subTitle }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="side">
+                    <div class="author-and-date">
+                      {{ topic.meta.author }}, 7d ago
+                    </div>
+                    <div class="viewed">86</div>
+                    <div class="comments">1786</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="community-card">
+            <span class="community-card-heading">Sources Review/talk</span>
+            <div class="community-card-box">
+              <div class="community-card-box-heading">
+                <span class="bold">Reviews</span>
+                <span class="light">Talk</span>
+                <span class="light">Steroid cycles</span>
+                <span class="bold button" (click)="goToSource()">View All</span>
+              </div>
+              <div class="community-card-list">
+                <div
+                  class="community-card-item"
+                  *ngFor="let sourceReview of sourceReviews"
+                >
+                  <div class="side">
+                    <div class="star">
+                      <img
+                        src="../../../../../assets/images/pages/record-row-star-gold.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="content">
+                      <div class="content-heading">
+                        {{ sourceReview.sourceName }}
+                      </div>
+                      <div class="content-description">
+                        Nutrition, Diet plans, Supplements
+                      </div>
+                    </div>
+                  </div>
+                  <div class="side">
+                    <div class="author-and-date">
+                      {{ sourceReview.sourceAddedBy }}, 7d ago
+                    </div>
+                    <div class="viewed">{{ sourceReview.sourceScore }}</div>
+                    <div class="comments">{{ sourceReview.numOfReviews }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="community-card">
+            <span class="community-card-heading">Steroid Review/talk</span>
+            <div class="community-card-box">
+              <div class="community-card-box-heading">
+                <span class="bold">Reviews</span>
+                <span class="light">Talk</span>
+                <span class="bold button" (click)="goToSteroids()"
+                  >View All</span
+                >
+              </div>
+              <div class="steroid-card" *ngFor="let steroid of steroidReviews">
+                <div class="star-img"></div>
+                <span class="heading">{{ steroid.heading }}</span>
+                <span class="description">({{ steroid.description }})</span>
+                <div class="author-and-date">NYButwhy, 29 min 29 sec</div>
+                <div class="score">11,652.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="community-card-gray">
+            <div class="community-card-heading-container">
+              <div class="community-card-heading">Groups list</div>
+              <div class="bold view-all" (click)="goToGroups()">View All</div>
+            </div>
+            <div class="community-card-box">
+              <div class="community-card-list">
+                <div class="group-list-card" *ngFor="let group of groups">
+                  <div class="group-list-card-heading">{{ group.heading }}</div>
+                  <div class="group-list-card-kpi">
+                    <div class="group-list-card-kpi-one">
+                      Request group membership
+                    </div>
+                    <div class="group-list-card-kpi-two">Public</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="community-card-gray">
+            <div class="community-card-heading-container">
+              <div class="community-card-heading">News</div>
+              <div class="bold view-all" (click)="goToNews()">View All</div>
+            </div>
+            <div class="community-card-box">
+              <div class="community-card-list">
+                <div class="news-card" *ngFor="let news of newsList">
+                  <div class="news-card-heading">{{ news.heading }}</div>
+                  <div class="news-card-kpi">
+                    <div class="news-card-kpi-one">press1</div>
+                    <div class="news-card-kpi-two">4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" style="padding: 10px">
+          <span>Pics</span>
+          <div>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-01.png"
+                alt=""
+            /></span>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-02.png"
+                alt=""
+            /></span>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-03.png"
+                alt=""
+            /></span>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-04.png"
+                alt=""
+            /></span>
+          </div>
+          <div>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-05.png"
+                alt=""
+            /></span>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-06.png"
+                alt=""
+            /></span>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-07.png"
+                alt=""
+            /></span>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-08.png"
+                alt=""
+            /></span>
+          </div>
+          <div>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-09.png"
+                alt=""
+            /></span>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-10.png"
+                alt=""
+            /></span>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-11.png"
+                alt=""
+            /></span>
+            <span class="community-pics"
+              ><img
+                src="../../../../../assets/images/pages/community-pics/community-pics-12.png"
+                alt=""
+            /></span>
+          </div>
+          <div style="float: right; margin-top: 10px">
+            <span class="community-pics-view-all">View All</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

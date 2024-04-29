@@ -1,0 +1,55 @@
+<div class="header-container">
+  <header class="bg-bg1 text-white">
+    <div class="main-wrapper header-wrapper mx-auto d-flex align-items-center justify-content-between">
+      <div class="navbar flex align-items-center gap-4">
+        <nav class="d-flex align-items-center gap-5">
+          <a routerLink="/sources/talk" class="text-white fw-medium">Sources</a>
+          <a routerLink="/steroids/talk" class="text-white fw-medium">Steroids</a>
+          <a routerLink="/community/forums" class="text-white fw-medium">Community</a>
+        </nav>
+        <form>
+          <label class="header-search p-2 px-3 d-flex align-items-center" for="search">
+            <img src="../../../../assets/icons/icon-search.svg" alt="" />
+            <input class="mx-2" type="text" placeholder="Search" id="search" />
+          </label>
+        </form> <!-- Corregido: Cierre de la etiqueta <form> -->
+      </div>
+      <div class="flex gap-3 nav-btns">
+        <a style="border-radius: 5px; border: 1px solid var(--primary-800); padding: 6px 8px;" href="#" class="">
+          <img src="../../../../assets/icons/icon-FavoriteFilled.svg" alt="" />
+        </a>
+        <a *ngIf="!(isLogged$ | async)" style="background-color: var(--primary-800) !important; width: 102px;" routerLink="/auth/register" class="fw-semibold fs-7 navbar-btn">Sign up</a>
+        <a *ngIf="!(isLogged$ | async)" routerLink="/auth/login" class="bg-white fw-semibold fs-7 navbar-btn">Login</a>
+      </div>
+      <span class="hamburger" role="button" tabindex="0">
+        <img src="../../../../assets/icons/icon-hamburger.svg" alt="" />
+      </span>
+    </div>
+    <div class="mobile-header bg-bg1">
+      <div class="header-wrapper mx-auto">
+        <div class="close-nav d-flex align-items-center justify-content-end h-100">
+          <img role="button" tabindex="0" src="../../../../assets/icons/icon-close.svg" alt="" />
+        </div>
+        <div class="flex flex-column align-items-center gap-5 mt-5">
+          <nav class="d-flex flex-column align-items-center gap-5">
+            <a href="#" class="text-white fw-medium">Sources</a>
+            <a href="#" class="text-white fw-medium">Steroids</a>
+            <a href="#" class="text-white fw-medium">Community</a>
+          </nav>
+          <label class="header-search p-2 px-3 d-flex align-items-center" for="email">
+            <img src="../../../../assets/icons/icon-search.svg" alt="" />
+            <input class="mx-2" type="text" placeholder="Search" id="email" /> <!-- Corregido: ID del input -->
+          </label>
+        </div>
+        <div class="flex justify-content-center gap-3 mt-5">
+          <a style="border-radius: 5px; border: 1px solid var(--primary-800); padding: 6px 8px;" href="#" class="">
+            <img src="../../../../assets/icons/icon-FavoriteFilled.svg" alt="" />
+          </a>
+          <a *ngIf="!(isLogged$ | async)" style="background-color: var(--primary-800) !important; width: 102px;" routerLink="/auth/register" class="fw-semibold fs-7 navbar-btn">Sign up</a>
+          <a *ngIf="!(isLogged$ | async)" routerLink="/auth/login" class="bg-white fw-semibold fs-7 navbar-btn">Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <app-title></app-title>
+</div>

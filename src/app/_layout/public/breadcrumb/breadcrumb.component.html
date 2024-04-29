@@ -1,0 +1,14 @@
+<div class="bread-crumb w-80 mx-auto mt-3">
+  @for (breadcrumb of (breadCrumbData$ | async); track breadcrumb.name; let last = $last) {
+    @if(!last) {
+      <span class="fs-7 fw-semibold underline">{{ breadcrumb.name }}</span>
+      <span> > </span>
+    }
+    @if(last) {
+      <span class="fs-7 fw-bolder text-primary-800">{{ breadcrumb.name }}</span>
+    }
+  }
+  @empty {
+    <span>No breadcrumbs available.</span>
+  }
+</div>

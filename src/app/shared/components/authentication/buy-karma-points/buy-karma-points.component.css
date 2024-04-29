@@ -1,0 +1,32 @@
+.page-content{
+    padding: 10px 100px;
+}
+.tab-content{
+    height: 800px;
+}
+#pricing {
+    height: 100%;
+    padding: 100px;
+    text-align: center;
+  }
+  
+  .card {
+    border: 1px solid black;
+  }
+  
+  .card-header {
+    color: white;
+    background-color: black;
+  }
+  
+  .pricing-column {
+    padding: 3% 2%;
+  }
+  
+  .btn-dark {
+    background-color: black;
+  }
+  
+  .btn-dark:hover {
+    background-color: #343a40;
+  }

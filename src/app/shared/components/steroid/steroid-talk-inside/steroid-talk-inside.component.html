@@ -1,0 +1,333 @@
+<div class="steroid-review-inside">
+  <div class="banner">
+    <p>Steroid review inside</p>
+  </div>
+  <div class="page-content">
+    <div class="navLink">
+      <span class="home">Home</span>
+      <span class="arrow">></span>
+      <span class="routable-text" (click)="goToBack()">Steroid Talks</span>
+      <span class="arrow">></span>
+      <span class="nav-text">{{ talk.heading }}</span>
+    </div>
+    <div class="main">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="talk-banner">
+            <div>
+              <img [src]="talk.image" alt="" class="talk-banner-image" />
+            </div>
+            <div class="talk-banner-content">
+              <div class="talk-banner-content-heading">
+                {{ talk.heading }}
+              </div>
+              <div class="talk-banner-details">
+                <div class="talk-banner-table-container">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Category</th>
+                        <th>Count</th>
+                        <th>Average</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>EFFECTIVENESS</td>
+                        <td>{{ talk.effectiveness?.split("/")[0] }}</td>
+                        <td>{{ talk.effectiveness?.split("/")[1] }}</td>
+                      </tr>
+                      <tr>
+                        <td>CREDIBILITY</td>
+                        <td>{{ talk.credibility?.split("/")[0] }}</td>
+                        <td>{{ talk.credibility?.split("/")[1] }}</td>
+                      </tr>
+                      <tr>
+                        <td>SIDE EFFECTS / PIP</td>
+                        <td>{{ talk.sideEffects?.split("/")[0] }}</td>
+                        <td>{{ talk.sideEffects?.split("/")[1] }}</td>
+                      </tr>
+                      <tr>
+                        <td>OVERALL</td>
+                        <td>{{ talk.overall?.split("/")[0] }}</td>
+                        <td>{{ talk.overall?.split("/")[1] }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="review-heading">
+              <span class="review-heading-text"> Review </span>
+              <div style="display: flex">
+                <button type="button" class="review-button">Discuss</button>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-author">
+                <span class="review-author-text">User</span>
+              </div>
+              <div class="review-star">
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-grey.png"
+                  alt=""
+                  class="active"
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+              </div>
+              <div class="review-content">
+                <span class="review-content-text">
+                  600mg a week makes me hungry and vascular as fuck, is got for
+                  tendons so good with deca in a off season. Watchout for your
+                  rbc especially if u run high doses boldenone then its not mild
+                  anymore just run a mild or low dose and u get some benefits
+                  without any or low side effects.
+                </span>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-author">
+                <span class="review-author-text">User</span>
+              </div>
+              <div class="review-star">
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-grey.png"
+                  alt=""
+                  class="active"
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+              </div>
+              <div class="review-content">
+                <span class="review-content-text">
+                  600mg a week makes me hungry and vascular as fuck, is got for
+                  tendons so good with deca in a off season. Watchout for your
+                  rbc especially if u run high doses boldenone then its not mild
+                  anymore just run a mild or low dose and u get some benefits
+                  without any or low side effects.
+                </span>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-author">
+                <span class="review-author-text">User</span>
+              </div>
+              <div class="review-star">
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-grey.png"
+                  alt=""
+                  class="active"
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+                <img
+                  src="../../../../../assets/images/pages/record-row-star-gold.png"
+                  alt=""
+                />
+              </div>
+              <div class="review-content">
+                <span class="review-content-text">
+                  600mg a week makes me hungry and vascular as fuck, is got for
+                  tendons so good with deca in a off season. Watchout for your
+                  rbc especially if u run high doses boldenone then its not mild
+                  anymore just run a mild or low dose and u get some benefits
+                  without any or low side effects.
+                </span>
+              </div>
+            </div>
+            <div class="review-pagination">
+              <img
+                src="../../../../../assets/images/pages/arrow-left-pagination.png"
+                alt=""
+              />
+              <button type="button" class="pagination-first">1</button>
+              <button type="button" class="pagination-second">2</button>
+              <button type="button" class="pagination-second">3</button>
+              <button type="button" class="pagination-second">...</button>
+              <button type="button" class="pagination-second">25</button>
+              <img
+                src="../../../../../assets/images/pages/arrow-right-pagination.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="recent-steroid-reviews">
+            <div class="heading">
+              <span class="heading-text">RECENT STEROID REVIEWS</span>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+            <div class="recent-steriod-reviews-card">
+              <div class="recent-steroid-reviews-card-content">
+                <span class="recent-steroid-reviews-card-content-text">
+                  USGear is amazing, I have made 5 orders from them, their
+                  prices <span> « Dav3891</span>
+                </span>
+              </div>
+              <div
+                class="recent-steroid-reviews-card-kpi"
+                style="display: flex"
+              >
+                <span class="recent-steroid-reviews-card-kpi-text"> </span>
+                <button
+                  type="button"
+                  class="recent-steroid-reviews-card-button"
+                >
+                  Trenbolone-e 200
+                </button>
+                <span class="recent-steroid-reviews-card-marker-one">
+                  <span class="vector">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="6"
+                      viewBox="0 0 12 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.73633 3.34545L5.27604 5.22181L10.5856 1"
+                        stroke="black"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="recent-steroid-reviews-card-marker-two">
+                  <span class="text">9/10</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="promo-image"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

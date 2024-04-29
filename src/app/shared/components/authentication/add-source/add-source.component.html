@@ -1,0 +1,36 @@
+<div class="my-account-page">
+    <div class="banner">
+        <p>Add Source</p>
+    </div>
+    <div class="page-content" style="height: 800px;">
+        <h4>Add source</h4>
+        <div class="row">
+           <div class="col-md-6">
+                <div class="form-one-card">
+                    <span class="text-label">Source Name*</span><br>
+                    <input type="text" name="" id="userNameId" placeholder="Source Name" [(ngModel)]="sourceName" autocomplete="false" readonly onfocus="this.removeAttribute('readonly');">
+                    <span class="text-label">Estimated Delivery*</span><br>
+                    <input type="text" name="" id="emailId" placeholder="Estimated Delivery" [(ngModel)]="estimatedDelivery" autocomplete="off">
+                    <span class="text-label">Minimum Order*</span><br>
+                    <input type="text" name="" id="passwordId" placeholder="Minimum Order" [(ngModel)]="minimumOrder" autocomplete="off">
+                    
+                    
+                </div>
+           </div>
+           <div class="col-md-6">
+                <div class="form-one-card">
+                    <span class="text-label">Payment Options*</span><br>
+                    <input type="text" name="" id="confirmpasswordId" placeholder="Payment Options" [(ngModel)]="paymentOption" autocomplete="off">
+                    <span class="text-label">Please Note*</span><br>
+                    <input type="text" name="" id="confirmpasswordId" placeholder="Please Note" [(ngModel)]="pleaseNote" autocomplete="off">
+                    <span class="text-label">Supplier Introduction*</span><br>
+                    <input type="text" name="" id="confirmpasswordId" placeholder="Supplier Introduction" [(ngModel)]="supplierIntroduction" autocomplete="off">
+                </div>
+           </div>
+        </div>
+        <div class="row button-add-source">
+            <button type="button" class="create-new-account-button" (click)="addSource()"><span>Add Source</span></button>
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,40 @@
+<div class="main-wrapper mx-auto mt-3">
+  <div class="main-section source-talk mt-3 d-flex justify-content-between">
+    <div class="w-100">
+      <div class="d-flex gap-2">
+        <a routerLink="/sources/review" class="rounded-sm-btn fs-7 fw-bold">Reviews</a>
+        <a href="javascript:void(0);" class="rounded-sm-btn fs-7 fw-bold bg-black text-white">Talk</a>
+      </div>
+      <div class="list-container mt-5">
+        <div class="list-body talks-list d-flex flex-column gap-1 mt-2">
+
+          @for(source of (sources$ | async); track source._id; let idx = $index) {
+          <a [routerLink]="['/sources/talk', source._id]" class="list-item bg-bg3 rounded-xl d-flex align-items-center justify-content-between">
+            <div class="list-item_content">
+              <div class="d-flex flex-wrap align-items-center justify-content-start gap-3">
+                <p class="fw-bold text-uppercase m-0">
+                  {{source.url}}
+                </p>
+                <span class="m-0 fs-8">{{ source.user.username }} | {{ source.createdAt | date:'MMM, y' }}</span>
+              </div>
+            </div>
+
+            <div class="list-item_points d-flex gap-1 flex-wrap">
+              @if(source && source.lastCommentUser) {
+              <span class="bg-bg4 rounded-xl p-1 px-2 fs-9-5 fw-semibold">{{ source?.lastCommentUser?.username }}, {{
+                source?.lastCommentUser?.createdAt | timeAgo }}</span>
+              }
+              <span class="bg-primary-800 rounded-xl p-1 px-2 fs-9-5 fw-semibold">{{ source.commentCount }}</span>
+            </div>
+          </a>
+          }
+        </div>
+        <app-pagination></app-pagination>
+      </div>
+    </div>
+    <aside class="d-flex flex-column gap-3">
+      <app-recent-reviews [type]="'Review'" [reference]="'Source'"></app-recent-reviews>
+      <img src="../../../../assets/imgs/aside-img.png" alt="" />
+    </aside>
+  </div>
+</div>

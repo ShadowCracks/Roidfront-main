@@ -1,0 +1,76 @@
+<div class="main-wrapper mx-auto mt-4">
+  <div class="main-section mt-3 d-flex justify-content-between">
+    <div class="source-review-inside w-100 flex flex-column">
+      <section class="item-detail flex gap-3 bg-bg3 rounded-xl p-3">
+        <div class="item-detail_content-wrapper flex gap-3">
+          <div class="item-detail_img rounded-lg">
+            <img
+              src="../../../../assets/imgs/source-review-img.png"
+              class="rounded-lg"
+              alt=""
+            />
+          </div>
+          <div class="item-detail_content">
+            <h5 class="fs-6 m-0">
+              {{ steroid.name }} {{ steroid.commonName.name }} by
+              {{ steroid.manufacturer.name }}
+            </h5>
+            <div class="review-stars">
+              <img
+                src="../../../../assets/icons/icon-review-star-empty.svg"
+                alt=""
+              />
+              <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+              <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+              <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+              <img src="../../../../assets/icons/icon-review-star.svg" alt="" />
+            </div>
+            <div
+              class="item-detail_table-wrapper mt-2 d-flex align-items-end justify-content-between gap-4"
+            >
+              <div class="w-100 item-detail_table bg-white rounded-lg">
+                <div
+                  class="item-detail_table-head d-flex align-items-center gap-2 justify-content-between"
+                >
+                  <span class="fs-9 fw-semibold">Category</span>
+                  <span class="fs-9 fw-semibold">Count</span>
+                  <span class="fs-9 fw-semibold">Average</span>
+                </div>
+                <div class="item-detail_table-body">
+                  @for(point of steroid.points; track point; let idx = $index) {
+                  <div
+                    class="item-detail_table-body_item d-flex align-items-center gap-2 justify-content-between"
+                  >
+                    <span class="fs-10 fw-semibold text-uppercase">{{
+                      point.category
+                    }}</span>
+                    <span class="fs-10 fw-semibold text-uppercase">{{
+                      point.reviews
+                    }}</span>
+                    <span class="fs-10 fw-semibold text-uppercase">{{
+                      point.average | number : "1.2-2"
+                    }}</span>
+                  </div>
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <app-comments
+        [type]="'Comment'"
+        [reference]="'Steroid'"
+        [referenceId]="steroidId"
+      ></app-comments>
+    </div>
+    <aside class="d-flex flex-column gap-3">
+      <app-recent-reviews
+        [type]="'Review'"
+        [reference]="'Steroid'"
+      ></app-recent-reviews>
+      <img src="../../../../assets/imgs/aside-img.png" alt="" />
+    </aside>
+  </div>
+</div>

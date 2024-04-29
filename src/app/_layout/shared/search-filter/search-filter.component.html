@@ -1,0 +1,29 @@
+<div class="aside-card aside-card-dropdowns bg-bg6 rounded-lg">
+  <div class="custom-dropdown d-flex flex-column gap-1">
+    <select name="fat" id="fat" class="w-100 input-item fw-bold fs-9" tabindex="1">
+      <option disabled selected>Common Name</option>
+      @for(commonName of (commonNames$ | async); track commonName._id; let idx = $index) {
+        <option value="{{commonName._id}}">{{commonName.name}}</option>
+      }
+    </select>
+  </div>
+  <div class="custom-dropdown d-flex flex-column gap-1">
+    <select name="fat" id="fat" class="w-100 input-item fw-bold fs-9" tabindex="1">
+      <option disabled selected>Manufacturer</option>
+      @for(manufacturer of (manufacturers$ | async); track manufacturer._id; let idx = $index) {
+      <option value="{{manufacturer._id}}">{{manufacturer.name}}</option>
+      }
+    </select>
+  </div>
+  <div class="custom-dropdown d-flex flex-column gap-1">
+    <select name="fat" id="fat" class="w-100 input-item fw-bold fs-9" tabindex="1">
+      <option disabled selected>Sort By</option>
+      <option value="val1">Stars</option>
+      <option value="val2">Score</option>
+      <option value="val3">Comments</option>
+    </select>
+  </div>
+  <button type="submit" class="bg-black text-primary-800 mx-auto w-100">
+    Apply Filter
+  </button>
+</div>
